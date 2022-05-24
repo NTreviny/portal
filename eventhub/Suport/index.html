@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html xml:lang="ca-ES" lang="ca-ES" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Suport</title>
+		<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link href="/css/master.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/canigo.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+
+	<script>
+		document.write("<meta name=\"titol\" content=\"Suport\" />");
+		document.write("<meta name=\"description\" content=\"Suport d\x27Eventhub\" />");
+	</script>
+
+	
+
+</head>
+<body class="single">
+	<div class="contenidor unfixed">
+
+				
+
+		<header class="fons_header navbar navbar-default z-index-menu">
+			<div class="container" role="menu">
+				<div class="row clearfix menuNav">
+					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
+						<button type="button" onclick="amunt();" title="Menu"
+							class="navbar-toggle pull-left" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+
+					<div class="col-md-3 col-xs-6 col-offset-2 column visible-xs titol-mobil">
+						
+						<span class="white titol-mobil-destacat">canigo.ctti</span><span class="white">.gencat.cat</span>
+					</div>
+
+					<div class="col-md-3 col-xs-3 column visible-xs coloca1">
+						<button onclick="amunt();" type="button" title="Cerca"
+							class="ico_cerca " data-toggle="collapse" data-target=".dos">
+						</button>
+					</div>
+
+				</div>
+
+				<div class="collapse dos">
+					<div class="shadowBox">
+						<form class="navbar-form navbar-left primer" action="/cercador/" method="get"
+ 						onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
+							<div class="form-group">
+								<input type="search" class="form-control" name="q" id="cerca_cap"
+									title="Cerca"
+									placeholder="Cerca" />
+								<button type="button" title="Neteja" class="btn btn-default"></button>
+								<input type="submit" class="ocult" name="Cerca" value="Cerca" />
+							</div>
+						</form>
+					</div>
+				</div>	
+
+				<nav class="collapse navbar-collapse navbar-ex1-collapse ">
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-4 column">
+							<a class="img-responsive logo" title="Generalitat de Catalunya"
+								href="https://ctti.gencat.cat/">gencat.cat</a>
+							<button class="menu_tancar visible-xs collapsed"
+								data-target=".navbar-collapse" data-toggle="collapse"
+								title="Tancar"></button>
+						</div>
+
+						<div class="col-md-6 col-sm-8 column hidden-xs hidden-mg">
+							<form class="navbar-form cercador_vermell hidden-xs pull-right" action="/cercador/"  method="get" onsubmit="location.href=this.action+'?q='+this.cerca2.value; return false;">
+								<div class="form-group">
+									<label class="hidden" for="cerca2">Cerca</label>
+									<input id="cerca2" class="form-control" type="search" 
+									placeholder="Cerca" name="q" title="Cerca">
+									<input class="btn btn-default" type="submit" title="Cerca" value="">
+								</div>
+							</form>
+
+							
+
+						</div>
+
+					</div>
+					<div class="col-xs-12 hidden-xs" id="nomPortal">
+                    	<span class="titol-cap-nou">Centre de Telecomunicacions i Tecnologies de la Informació</span>
+                    </div>					
+					<ul class="nav navbar-nav">
+
+			        	
+
+						<li>
+							<a class="dropdown-toggle" href='/' data-toggle='_dropdown'>Inici</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/arqctti' data-toggle='_dropdown'>Arquitectura CTTI</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/blog' data-toggle='_dropdown'>Blog</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cloud' data-toggle='_dropdown'>Cloud</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/canigo-fwk-docs' data-toggle='_dropdown'>Canigó</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sic' data-toggle='_dropdown'>SIC</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sgde' data-toggle='_dropdown'>SGDE</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/gicar' data-toggle='_dropdown'>GICAR</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cs' data-toggle='_dropdown'>Centres de Suport</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/dadesref' data-toggle='_dropdown'>Gestió Tècnica de Dades</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/eventhub' data-toggle='_dropdown'>EventHub</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/rpa' data-toggle='_dropdown'>RPA</a>
+						</li>
+
+						
+
+					</ul>
+
+				</nav>
+			</div>
+		</header>
+
+
+
+	</div>
+
+	<section class="border-start">
+
+						
+			
+
+			<article class="bgGrey">
+				<div class="container">
+					<div class="row">
+						<div class="capcelera_basica col-sm-12">
+							<div class="capcelera_basica_cont">
+								<ol class="breadcrumb filariana hidden-xs">
+									<li>
+										<a href="/">Inici</a>
+									</li>
+									<li class="breadcrumbs2">
+									
+										<a href="/eventhub">
+											
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    EventHub
+
+
+
+
+
+
+
+
+										</a>
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									
+									</li>
+
+								</ol>
+
+								<h1 class="capcelera_flotant pull-left" data-txt=".title">
+									
+
+										
+											
+
+
+
+
+	Suport
+
+
+										
+
+									
+								</h1>
+
+								
+
+								
+								
+
+								
+
+								
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</article>
+
+			
+
+
+		   <div class="padding-xs container">
+	    	
+	    	   <i><b>Darrera actualització:</b></i> 02-05-2022
+	        
+           </div>
+           
+			<article class="padding-xs padding-sm padding-md contingut">				
+				<div class="container">
+ 		
+					
+				
+
+	
+
+	<div class="row" id="TOC">
+		<div class="col-md-12 col-xs-12"> 
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#oficina-tècnica-eventhub">Oficina tècnica Eventhub</a>
+<ul>
+<li><a href="#l-oficina-tècnica-s-encarrega-de">L’oficina tècnica s’encarrega de:</a></li>
+</ul></li>
+<li><a href="#serveis-que-ofereix-l-oficina-tècnica">Serveis que ofereix l’oficina tècnica</a>
+<ul>
+<li><a href="#serveis-actius-a-la-plataforma-i-com-demanar-los">Serveis actius a la plataforma i com demanar-los</a></li>
+</ul></li>
+<li><a href="#demanar-nou-client-del-sistema">Demanar nou client del sistema</a>
+<ul>
+<li><a href="#tiquet-petició-nou-client-kafka">Tiquet petició nou client Kafka</a></li>
+<li><a href="#tasques-a-fer">Tasques a fer</a></li>
+<li><a href="#pla-de-capacitat">Pla de capacitat</a></li>
+</ul></li>
+<li><a href="#gestionar-topics">Gestionar topics</a>
+<ul>
+<li><a href="#tiquet-de-petició-de-gestió-de-topics-kafka">Tiquet de petició de gestió de topics Kafka</a></li>
+<li><a href="#aplicacions-kafka-streams">Aplicacions Kafka Streams</a></li>
+</ul></li>
+<li><a href="#gestionar-l-schema-registry">Gestionar l’Schema Registry</a>
+<ul>
+<li><a href="#tiquet-de-petició-de-gestió-de-l-schema-registry">Tiquet de petició de gestió de l’Schema Registry</a></li>
+</ul></li>
+<li><a href="#demanar-accés-a-un-topic-existent">Demanar accés a un topic existent</a>
+<ul>
+<li><a href="#tiquet-de-petició-d-accés-a-un-topic-kafka">Tiquet de petició d’accés a un topic Kafka</a></li>
+</ul></li>
+<li><a href="#gestionar-connectors">Gestionar connectors</a>
+<ul>
+<li><a href="#tiquet-de-petició-de-gestió-de-topics-kafka-1">Tiquet de petició de gestió de topics Kafka</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    	</div>
+	</div>
+
+	
+
+
+					
+
+						
+
+<h2 id="oficina-tècnica-eventhub">Oficina tècnica Eventhub</h2>
+
+<p>L’oficina tècnica Eventhub es va crear amb la finalitat de donar el suport necessari als departaments que es volen adherir a la seva plataforma.</p>
+
+<p>L’oficina tècnica està pensada per ajudar en tot el procés d’integració, des de l’<em>onboarding</em> de la aplicació a integrar-se amb Kafka fins el desplegament en els diferents entorns de la plataforma (INT, PRE i PRO).</p>
+
+<h3 id="l-oficina-tècnica-s-encarrega-de">L’oficina tècnica s’encarrega de:</h3>
+
+<ul>
+<li>Administrar la plataforma Confluent Kafka.</li>
+<li>Observabilitat de la plataforma.</li>
+<li>Afegir components d’arquitectura si calgués.</li>
+<li>Gestió de les peticions de manteniment dels esquemes (Schema Registry)</li>
+<li>Afegir nous plugins a Kafka Connect (mysql, oracle, sap, etc).</li>
+<li>Configurar connectors de Kafka Connect tant per source com per sink.</li>
+<li>Gestionar els usuaris d’aplicació i les seves autoritzacions.</li>
+<li>Ajudar a definir i configurar els topics necessaris per a la vostra aplicació.</li>
+<li>Fine tuning de topics i particions.</li>
+<li>Resolució de dubtes amb un equip d’experts en la tecnologia.</li>
+<li>Repositori de coneixement i experiències d’altres departaments.</li>
+<li>Generació d’informes detallats de consum dels topics.</li>
+<li>Suport a proves de rendiment.</li>
+<li>Donar suport a les aplicacions usuàries de la plataforma.</li>
+<li>Subscripció Gold amb Confluent, podem obrir tiquets de suport al fabricant</li>
+<li>Consultoria del fabricant en funció del cas d&rsquo;ús. En cas que sigui necessari podem gestionar sessions de treball amb els consultors de Confluent.</li>
+<li>Donar accés per obrir tiquets a Confluent directament.</li>
+</ul>
+
+<h2 id="serveis-que-ofereix-l-oficina-tècnica">Serveis que ofereix l’oficina tècnica</h2>
+
+<h3 id="serveis-actius-a-la-plataforma-i-com-demanar-los">Serveis actius a la plataforma i com demanar-los</h3>
+
+<p><em>Kafka Brokers, Schema Registry i Kafka Connect</em></p>
+
+<ul>
+<li><p>Onboarding per conèixer les seves necessitats, entendre el cas d’ús i tenir una visió de totes les peces. Ens podeu contactar a <strong>eventhub.ctti@gencat.cat</strong></p></li>
+
+<li><p>Passes a seguir per integrar-se a la plataforma Eventhub</p>
+
+<ul>
+<li>Obrir regles de firewall fins als endpoints de la plataforma als diferents entorns.</li>
+<li>Demanar usuari a partir del codi de diàleg i nom d&rsquo;aplicació.</li>
+<li>Demanar certificats.</li>
+<li>Demanar els topics.</li>
+</ul></li>
+
+<li><p>Aprovisionar, topics.</p></li>
+
+<li><p>Aprovisionar schemas.</p></li>
+
+<li><p>Ajudar en la definició dels topics (nombre de particions, rèpliques, etc). En cas de dubtes ens podeu obrir un tiquet i podem fer reunions de treball.</p></li>
+
+<li><p>En cas necessari, demanar la configuració de Kafka Connect per fer transferències de registres entre bases de dades o sistemes d’informació</p></li>
+
+<li><p>Seguiment de les Best practices de l’arquitectura</p>
+
+<ul>
+<li>Per la integració d’aplicacions (consumir / produir)</li>
+<li>Ús de les llibreries i dependències per la integració</li>
+<li>Knowledge base de Confluent</li>
+<li>Assessorament per la implementació de microserveis</li>
+</ul></li>
+
+<li><p>Comptem amb l’experiència d’altres equips ja integrats a la plataforma</p></li>
+</ul>
+
+<h2 id="demanar-nou-client-del-sistema">Demanar nou client del sistema</h2>
+
+<h3 id="tiquet-petició-nou-client-kafka">Tiquet petició nou client Kafka</h3>
+
+<p>Quan un nou client vol integrar-se amb la plataforma Eventhub, el primer que ha de fer és realitzar una petició via tiquet aportant la següent informació:
+Codi del projecte de 4 dígits.
+Nom de l&rsquo;aplicació
+Entorn pel qual es vol: INT, PRE, PRO.</p>
+
+<h3 id="tasques-a-fer">Tasques a fer</h3>
+
+<p><strong>Crear nom usuari</strong></p>
+
+<p>L’oficina tècnica crearà el nom de l’usuari segons les dades informades en el tiquet.</p>
+
+<p><strong>Assignar rols i permisos</strong></p>
+
+<p>L’oficina tècnica s’encarregarà de l&rsquo;assignació dels permisos corresponents.</p>
+
+<p><strong>Demanar certificat</strong></p>
+
+<p>L’Oficina Tècnica proporcionarà un <a href="/related/eventhub/mkcert.sh">script</a> de creació de la clau privada i CSR per facilitar aquesta tasca als clients. La clau privada s’ha d’emmagatzemar protegida i el CSR s’enviarà a l’AC, que el signarà i retornarà al client el certificat final (clau pública) signat amb Sectigo.</p>
+
+<p><strong>Com generar certificats per als entorns de PRE i PRO</strong></p>
+
+<p>Haureu de crear el CSR i clau privada.
+El CSR s&rsquo;ha d&rsquo;enviar a l&rsquo;Agència de Ciberseguretat perquè el signi amb la CA de Sectigo.</p>
+
+<p>Ús de <a href="/related/eventhub/mkcert.sh">l&rsquo;script</a> per a la generació dels CSR i clau privada per a l&rsquo;entorn de PRE:</p>
+
+<pre><code>./mkcert.sh -n nouClient -o /path/to/pre-cert -e pre
+</code></pre>
+
+<p>Un cop torneu el certificat signat, haureu de generar el fitxer JKS que utilitzareu per realitzar la connexió a partir d&rsquo;aquest.</p>
+
+<p>Podeu seguir els següents passos per generar el vostre jks:</p>
+
+<ul>
+<li><p>Crear un keystore PKCS12 temporal:</p>
+
+<pre><code>openssl pkcs12 -export -out nouClient.pkcs12 -in nouClient.client.eventhub.intranet.gencat.cat.cer -inkey nouClient.key -name nouClient -CAfile BundleCASectigo.cer -caname SectigoCARoot -chain
+</code></pre></li>
+
+<li><p>Crear el keystore JKS a partir del PKCS12:</p>
+
+<pre><code>keytool -importkeystore -srckeystore nouClient.pkcs12 -srcstoretype PKCS12 -destkeystore nouClient.keystore.jks -deststoretype JKS
+</code></pre></li>
+</ul>
+
+<p>Nota: eliminar el PKCS12 després de crear el JKS.</p>
+
+<ul>
+<li>Incloure els certificats CA arrel y CA intermedi dins el JKS:</li>
+</ul>
+
+<pre><code>keytool -import -trustcacerts -alias SectigoCARoot -file SectigoCARoot.cer -keystore nouClient.keystore.jks -storepass &quot;xxxxx&quot; –noprompt 
+</code></pre>
+
+<pre><code>keytool -import -trustcacerts -alias SectigoRSAOrganization -file SectigoRSAOrganization.cer -keystore nouClient.keystore.jks -storepass &quot;xxxx&quot; -noprompt
+</code></pre>
+
+<h3 id="pla-de-capacitat">Pla de capacitat</h3>
+
+<p>Un client que vulgui integrar-se a la plataforma Eventhub, haurà, en la mesura que sigui possible, presentar un pla de capacitat indicant una estimació de l&rsquo;ús que farà de la plataforma.</p>
+
+<p>Aquest pla haurà de tenir en compte la informació següent, per cadascun dels tòpics sol·licitats:</p>
+
+<ul>
+<li>Estimació de missatges produïts/període de temps. Ex.: 100 msg/s.</li>
+<li>Estimació de missatges consumits/període de temps. Ex.: 100 msg/s.</li>
+<li>Estimació de mida dels missatges. Ex.: 10 KiB.</li>
+<li>Estimació dús de disc. Ex.: 10 GiB.</li>
+</ul>
+
+<p>En posteriors sol·licituds de tòpics, cal presentar l&rsquo;estimació per a aquests nous tòpics.</p>
+
+<h2 id="gestionar-topics">Gestionar topics</h2>
+
+<h3 id="tiquet-de-petició-de-gestió-de-topics-kafka">Tiquet de petició de gestió de topics Kafka</h3>
+
+<p>El client haurà de sol·licitar via tiquet l’alta, esborrat o modificació del topic, omplint el formulari descrit a sota.
+L’oficina tècnica validarà la petició i farà les accions oportunes.</p>
+
+<p>Formulari de gestió de topics:
+<img src="/related/eventhub/formtopics.png" alt="Nou topic" /></p>
+
+<p>Exemples:
+Topic per a l&rsquo;aplicació Portal Tributari, amb codi 0205, domini &ldquo;tributs&rdquo;, propòsit self assessment i entorn de preproducció: a0205-portaltributari-tributs-selfassessment-pre</p>
+
+<p>Topic per a l&rsquo;aplicació Portal Tributari, amb codi 0205, domini &ldquo;tributs&rdquo;, propòsit actualitzar estats i entorn de producció: a0205-portaltributari-tributs-updatestate</p>
+
+<h3 id="aplicacions-kafka-streams">Aplicacions Kafka Streams</h3>
+
+<p>Les aplicacions Kafka Streams poden generar tòpics interns necessaris per al seu funcionament.</p>
+
+<p>Un projecte que tingui intenció de fer ús d&rsquo;aquesta tecnologia per al desenvolupament d’aplicacions, ho haurà de comunicar a l&rsquo;Oficina Tècnica per assignar els permisos de RBAC necessaris.</p>
+
+<p>El paràmetre application.id, definit per l&rsquo;aplicació, és utilitzat com a prefix a l&rsquo;hora de generar el nom dels tòpics interns (<strong>&lt;application.id&gt;-&lt;operatorName&gt;-&lt;suffix&gt;</strong>) i, per tant, serà tingut en compte a l&rsquo;assignació de permisos de RBAC. El valor d&rsquo;aquest paràmetre ha de seguir la nomenclatura <strong>&lt;a&gt;&lt;codi aplicació&gt;-&lt;nom aplicació&gt;-ks-&lt;domini&gt;</strong> per poder garantir que sigui únic al clúster.</p>
+
+<p>En aplicacions stateful, és molt recomanable el nomenat d&rsquo;operadors per evitar problemes derivats de canvis de topologia. Veure <a href="https://docs.confluent.io/platform/current/streams/developer-guide/dsl-topology-naming.html#naming-kstreams-dsl-topologies">1</a> y <a href="https://developer.confluent.io/tutorials/naming-stateful-operations/kstreams.html">2</a> per a més informació.</p>
+
+<h2 id="gestionar-l-schema-registry">Gestionar l’Schema Registry</h2>
+
+<h3 id="tiquet-de-petició-de-gestió-de-l-schema-registry">Tiquet de petició de gestió de l’Schema Registry</h3>
+
+<ul>
+<li>El client haurà de sol·licitar via tiquet l’alta, esborrat o modificació del schema, omplint el formulari descrit a sota.</li>
+<li>L’oficina tècnica validarà la petició i farà les accions oportunes.</li>
+</ul>
+
+<p>Formulari de gestió de Schema Registry:
+<img src="/related/eventhub/srform.png" alt="Nou schema" /></p>
+
+<h2 id="demanar-accés-a-un-topic-existent">Demanar accés a un topic existent</h2>
+
+<h3 id="tiquet-de-petició-d-accés-a-un-topic-kafka">Tiquet de petició d’accés a un topic Kafka</h3>
+
+<ul>
+<li>El client haurà de sol·licitar per tiquet l’accés als topics, emplenant el formulari de sol·licitud i comptant amb l’autorització corresponent per part del gestor/PO del sistema.</li>
+<li>L’oficina tècnica validarà la petició i gestionarà l’assignació de permisos per l’usuari.</li>
+<li>L’oficina tècnica informarà en el tiquet la finalització de l’operació.</li>
+</ul>
+
+<p>Formulari d’accés a un tòpic:
+<img src="/related/eventhub/formtopicacces.png" alt="Topic accés" /></p>
+
+<h2 id="gestionar-connectors">Gestionar connectors</h2>
+
+<h3 id="tiquet-de-petició-de-gestió-de-topics-kafka-1">Tiquet de petició de gestió de topics Kafka</h3>
+
+<ul>
+<li>El client haurà de sol·licitar via tiquet l’alta, esborrat o modificació del connector, omplint el formulari descrit a sota.</li>
+<li>L’oficina tècnica validarà la petició i farà les accions oportunes.</li>
+<li>En cas que el plugin no estigui disponible, caldrà una instal·lació per manteniment.</li>
+</ul>
+
+<p>Formulari de gestió de connectors:
+<img src="/related/eventhub/formconnect.png" alt="Form connect" /></p>
+
+
+					
+
+					
+				</div>	
+
+			</article>	
+
+
+	</section>	
+
+		<div class="fons_footer ">
+		<footer class="container center-block shadowBox2">
+			<div class="shadow2"></div>
+			<div class="row footer_tab_ord">
+
+				<div class="footer_tab_bot col-sm-12">
+					<div class="avis_legal">
+
+						<div id="fAvisLegal">
+							<div>
+								<div class="hidden-xs">
+									<a href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" alt="www.gencat.cat"
+										/></a>
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								<div class="visible-xs avis_legal">
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								
+								<div class="fi_peu visible-xs">
+									<a title="www.gencat.cat" href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" 
+										alt="www.gencat.cat" /></a> <a class="torna_amunt pull-right"
+										href=" javascript:tornarAmunt();" title="Torna amunt">
+										<p>Torna amunt</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="/js/master.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script src="/js/custom.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+if(location.hostname!=="localhost"){
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', "UA-59408075-1", 'auto');
+	ga('send', 'pageview', {
+	  	'page': location.pathname + location.search  + location.hash
+	  }
+	);
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>

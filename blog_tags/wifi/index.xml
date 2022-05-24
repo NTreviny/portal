@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog d'Arquitectura del CTTI. Generalitat de Catalunya</title>
+    <link>https://canigo.ctti.gencat.cat/blog_tags/wifi/</link>
+    <language>ca-es</language>
+    
+    
+    <updated>Tue, 26 Apr 2022 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Wi-Fi 6E: Visió General i evolució</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2022/04/WiFi6e/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2022/04/WiFi6e/</guid>
+      <description>Ja fa 35 anys que va aparèixer la primera versió de l&#39;estàndard Wi-Fi, conegut com a IEEE 802.11. La necessitat de més velocitat i més dispositius connectats a la xarxa wifi ha esdevingut  la darrera versió Wi-Fi 6E a 6 GHz i  ja  s&#39;hi està treballant en la nova versió de Wi-Fi 7.</description>
+    </item>
+    
+  </channel>
+</rss>

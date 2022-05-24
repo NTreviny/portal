@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog d'Arquitectura del CTTI. Generalitat de Catalunya</title>
+    <link>https://canigo.ctti.gencat.cat/blog_tags/windows/</link>
+    <language>ca-es</language>
+    
+    
+    <updated>Wed, 18 May 2022 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Windows Hello</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2022/05/WindowsHello/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2022/05/WindowsHello/</guid>
+      <description>L&#39;autenticació és un punt crític, ja que a més de requerir seguretat també s’intenta garantir una bona experiència, degut a aquest motiu les solucions com Windows Hello han fet avançar aquesta tendència.</description>
+    </item>
+    
+    <item>
+      <title>Windows 11. Visió General</title>
+      <link>https://canigo.ctti.gencat.cat/blog/2022/03/Windows11/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2022/03/Windows11/</guid>
+      <description>Windows sempre ha existit per ser un escenari per l&#39;innovació mundial.  Windows és més que un sistema operatiu, és on s&#39;aprèn i es treballa per aconseguir resultats: una plataforma en la que hi confien més de mil milions de persones en l’actualitat.</description>
+    </item>
+    
+  </channel>
+</rss>

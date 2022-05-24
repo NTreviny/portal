@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html xml:lang="ca-ES" lang="ca-ES" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Wi-Fi 6E: Visió General i evolució</title>
+		<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link href="/css/master.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/canigo.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+
+	<script>
+		document.write("<meta name=\"titol\" content=\"Wi-Fi 6E: Visió General i evolució\" />");
+		document.write("<meta name=\"description\" content=\"Ja fa 35 anys que va aparèixer la primera versió de l\x27estàndard Wi-Fi, conegut com a IEEE 802.11. La necessitat de més velocitat i més dispositius connectats a la xarxa wifi ha esdevingut  la darrera versió Wi-Fi 6E a 6 GHz i  ja  s\x27hi està treballant en la nova versió de Wi-Fi 7.\" />");
+	</script>
+
+	
+
+</head>
+<body class="single">
+	<div class="contenidor unfixed">
+
+				
+
+		<header class="fons_header navbar navbar-default z-index-menu">
+			<div class="container" role="menu">
+				<div class="row clearfix menuNav">
+					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
+						<button type="button" onclick="amunt();" title="Menu"
+							class="navbar-toggle pull-left" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+
+					<div class="col-md-3 col-xs-6 col-offset-2 column visible-xs titol-mobil">
+						
+						<span class="white titol-mobil-destacat">canigo.ctti</span><span class="white">.gencat.cat</span>
+					</div>
+
+					<div class="col-md-3 col-xs-3 column visible-xs coloca1">
+						<button onclick="amunt();" type="button" title="Cerca"
+							class="ico_cerca " data-toggle="collapse" data-target=".dos">
+						</button>
+					</div>
+
+				</div>
+
+				<div class="collapse dos">
+					<div class="shadowBox">
+						<form class="navbar-form navbar-left primer" action="/cercador/" method="get"
+ 						onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
+							<div class="form-group">
+								<input type="search" class="form-control" name="q" id="cerca_cap"
+									title="Cerca"
+									placeholder="Cerca" />
+								<button type="button" title="Neteja" class="btn btn-default"></button>
+								<input type="submit" class="ocult" name="Cerca" value="Cerca" />
+							</div>
+						</form>
+					</div>
+				</div>	
+
+				<nav class="collapse navbar-collapse navbar-ex1-collapse ">
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-4 column">
+							<a class="img-responsive logo" title="Generalitat de Catalunya"
+								href="https://ctti.gencat.cat/">gencat.cat</a>
+							<button class="menu_tancar visible-xs collapsed"
+								data-target=".navbar-collapse" data-toggle="collapse"
+								title="Tancar"></button>
+						</div>
+
+						<div class="col-md-6 col-sm-8 column hidden-xs hidden-mg">
+							<form class="navbar-form cercador_vermell hidden-xs pull-right" action="/cercador/"  method="get" onsubmit="location.href=this.action+'?q='+this.cerca2.value; return false;">
+								<div class="form-group">
+									<label class="hidden" for="cerca2">Cerca</label>
+									<input id="cerca2" class="form-control" type="search" 
+									placeholder="Cerca" name="q" title="Cerca">
+									<input class="btn btn-default" type="submit" title="Cerca" value="">
+								</div>
+							</form>
+
+							
+
+						</div>
+
+					</div>
+					<div class="col-xs-12 hidden-xs" id="nomPortal">
+                    	<span class="titol-cap-nou">Centre de Telecomunicacions i Tecnologies de la Informació</span>
+                    </div>					
+					<ul class="nav navbar-nav">
+
+			        	
+
+						<li>
+							<a class="dropdown-toggle" href='/' data-toggle='_dropdown'>Inici</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/arqctti' data-toggle='_dropdown'>Arquitectura CTTI</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/blog' data-toggle='_dropdown'>Blog</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cloud' data-toggle='_dropdown'>Cloud</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/canigo-fwk-docs' data-toggle='_dropdown'>Canigó</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sic' data-toggle='_dropdown'>SIC</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sgde' data-toggle='_dropdown'>SGDE</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/gicar' data-toggle='_dropdown'>GICAR</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cs' data-toggle='_dropdown'>Centres de Suport</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/dadesref' data-toggle='_dropdown'>Gestió Tècnica de Dades</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/eventhub' data-toggle='_dropdown'>EventHub</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/rpa' data-toggle='_dropdown'>RPA</a>
+						</li>
+
+						
+
+					</ul>
+
+				</nav>
+			</div>
+		</header>
+
+
+
+	</div>
+
+	<section class="border-start">
+
+						
+			
+
+			<article class="bgGrey">
+				<div class="container">
+					<div class="row">
+						<div class="capcelera_basica col-sm-12">
+							<div class="capcelera_basica_cont">
+								<ol class="breadcrumb filariana hidden-xs">
+									<li>
+										<a href="/">Inici</a>
+									</li>
+									<li class="breadcrumbs2">
+									
+										<a href="/blog">
+											
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Blog d'Arquitectura
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										</a>
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									
+									</li>
+
+								</ol>
+
+								<h1 class="capcelera_flotant pull-left" data-txt=".title">
+									
+
+										
+											
+
+
+
+
+	Wi-Fi 6E: Visió General i evolució
+
+
+										
+
+									
+								</h1>
+
+								
+
+								
+								
+
+								
+
+								
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</article>
+
+			
+
+
+		   <div class="padding-xs container">
+	    	
+	    	   <i><b>Darrera actualització:</b></i> 26-04-2022
+	        
+           </div>
+           
+			<article class="padding-xs padding-sm padding-md contingut">				
+				<div class="container">
+ 		
+					
+				
+
+	
+
+
+					
+
+						
+
+<hr />
+
+<h1 id="wi-fi-6e-visió-general-i-evolució"><strong>Wi-Fi 6E: Visió General i evolució</strong></h1>
+
+<hr />
+
+<h2 id="TaulaContiguts"><strong>Taula de Continguts</strong></h2>
+
+<ol>
+<li><a href="#Introduccio">Introducció</a></li>
+<li><a href="#CaracteristiquesFuncionals">Característiques tècniques funcionals de Wi-Fi 6 i 6E</a>
+
+<ol>
+<li><a href="#Descripcio">Descripció de l’estàndard Wi-Fi 6 i 6E</a></li>
+<li><a href="#Equipament">Equipament Wi-Fi 6E Certificat</a></li>
+</ol></li>
+<li><a href="#RequerimentsTecnicsRiscos">Requeriments tècnics i riscos</a></li>
+<li><a href="#CaracteristiquesPrincipals">Visió general de Wi-Fi 7</a>
+
+<ol>
+<li><a href="#CaracteristiquesWifi7">Característiques de Wi-Fi 7</a></li>
+<li><a href="#SortirWifi7">Quan sortirà Wi-Fi 7</a></li>
+</ol></li>
+<li><a href="#Conclusions">Conclusions</a></li>
+<li><a href="#Referencies">Referències</a></li>
+<li><a href="#Glossari">Glossari</a></li>
+</ol>
+
+<hr />
+
+<h2 id="Introduccio"><strong>Introducció</strong></h2>
+
+<p><strong>Wi-Fi és la tecnologia que permet a molts dispositius electrònics connectar-se sense fils a Internet o una xarxa determinada mitjançant ones de ràdio.</strong>
+<br>
+Des que Wi-Fi es va llançar per primera vegada l’any 1997, els estàndards Wi-Fi han evolucionat contínuament, la qual cosa s’ha traduit en més velocitats de tranmissió i major cobertura. A mesura que s&rsquo;agreguen noves capacitats a l&rsquo;estàndard original IEEE 802.11, s&rsquo;afegeix una lletra per la seva modificació (802.11b, 802.11g, 802.11n, 802.11ax, etc.).
+<br>
+L&rsquo;any 2018, Wi-Fi Alliance va prendre mesures perquè els noms dels estàndards de Wi-Fi, fossin més fàcils d&rsquo;identificar i comprendre (Wi-Fi 4, Wi-Fi 5, Wi-Fi 6, etc.).
+<br>
+A continuació, s’hi pot veure l’evolució técnica de l’estàndard IEEE 802.11:
+<br>
+<div align="center">
+  <img src="/images/bloc/2022/04/foto2.jpg" />
+</div>
+<br></p>
+
+<p>Cada versió de l&rsquo;estàndard porta una sèrie de millores, algunes d&rsquo;elles són indispensables, i altres, són opcionals.
+<br><br>
+Fa a prop de dos anys que va aparèixer l&rsquo;estàndard Wi-Fi  6 i ja es comença a desplegar sobre tot a entorns on la wifi és crítica, i fa relativament poc, que va arribar al mercat Wi-Fi 6E.
+<br>
+<div align="center">
+  <img src="/images/bloc/2022/04/foto3.jpg" />
+</div>
+<br></p>
+
+<p>El Wi-Fi 6E neix de la necessitat de connectar a la xarxa wifi, una gran quantitat de dispositius.
+<br><br>
+A diferència de Wi-Fi 6, Wi-Fi 6E no és un estàndard. És una extensió de l&rsquo;estàndard Wi-Fi 6 que permet gaudir de la nova banda de freqüència de 6 GHz amb l’objectiu de disposar de més canals wifi.</p>
+
+<h2 id="CaracteristiquesFuncionals"><strong>Característiques tècniques funcionals de Wi-Fi 6 i 6E</strong></h2>
+
+<p>Com a grans pilars, diferencies i evolucions  entre la nova versió de Windows 11 i l’anterior, es destaquen  les següents:
+<br></p>
+
+<h3 id="Descripcio"><strong>Descripció de l’estàndard Wi-Fi 6 i 6E</strong></h3>
+
+<p>Les següents característiques tècniques de la Wi-Fi permeten que Wi-Fi 6 i 6E siguin més ràpides i eficients.
+<br><br></p>
+
+<h5 id="bandes-i-canals"><strong>Bandes i canals</strong></h5>
+
+<p>Wi-Fi 6 fa ús de la xarxa de 2,4 GHz i 5 GHz alhora, amb això s’aconsegueix aprofitar els punts forts de les dues:</p>
+
+<ul>
+<li><strong>Major distancia</strong>  de la xarxa de 2,4 GHz<br /></li>
+<li><strong>Velocitat</strong> de la xarxa de 5 GHz</li>
+</ul>
+
+<p>S’ha de tenir en compte, que la banda de 2,4 GHz, és la més utilitzada per altres dispositius, com per exemple els microones, telèfons sense fils, Bluetooth, i pot arribar a estar congestionada, el que provoca  interferències a la xarxa wifi  i problemes de connexió.
+<br><br>
+La banda de 5 GHz al tenir major amplada de banda i més canals, provoca que estigui menys congestionada.
+<br><br></p>
+
+<p><strong>La novetat de l&rsquo;estàndard Wi-Fi 6E, és que agrega la banda de freqüència de 6 GHz que  proporciona  un total de 1.200  MHz disponibles, amb el que es disposa d’una gran quantitat de nous canals.</strong>
+<br>
+<div align="center" width="70%" >
+  <img src="/images/bloc/2022/04/foto4.jpg" />
+</div>
+<br></p>
+
+<p>Com més gran és l&rsquo;ample del canal, més velocitat teòrica es pot aconseguir.
+<br>
+La banda de 6 GHZ propociona millor velocitat en dispositius que estiguin a poca distància o que requereixin tenir menor abast.  A més, permet  tenir més amplada de banda disponible, per la qual cosa els routers wifi i els punts d&rsquo;accés poden configurar-se en diferents canals sense que hi hagi interferències entre ells.
+<br><br>
+A Europa, a causa de la legislació actual, no es pot gaudir de tots els canals Wi-Fi 6E que sí que estan disponibles en altres països, com els EUA. També hi haurà menys potència màxima que als  EUA, fet que es tradueix  en que a Europa, hi hagi una menor cobertura wifi a la banda de 6 GHz.
+<br><br>
+L&rsquo;estàndard Wi-Fi 6E utilitza demanera predeterminada 160 MHz d&rsquo;ample de banda per canal. A Europa només  hi haurà disponibles 3 canals, això vol dir, que un total de 3 routers o punts d’accés, podran emetre a la xarxa wifi en aquesta banda de freqüències, sense que hi hagi interferències entre ells a causa de la proximitat.
+<br><br>
+A diferència de les altres bandes wifi de 2,4 GHz i 5 GHz, els 6 GHz tenen algunes restriccions, com que els punts d&rsquo;accés només poden utilitzar-se en interiors, incloent avions i trens però no en cotxes. Només es permetrà el seu ús en exteriors en dispositius portàtils utilitzant molt baixa potència, excloent en tot cas, l&rsquo;ús per a drons.
+<br></p>
+
+<h6 id="inici-taulacontiguts"><a href="#TaulaContiguts">Inici</a></h6>
+
+<p><br><br></p>
+
+<h5 id="modulació"><strong>Modulació</strong></h5>
+
+<p><strong>La modulació és la forma que tenen les xarxes sense fils de transmetre dades a través del medi (aire).</strong>
+<br>
+Amb  Wi-Fi 6 i Wi-Fi 6E, la  modulació com a màxim por arribar a  1024-QAM, és a dir, s’aconsegueix transmetre més bits en el mateix interval de temps.
+<br><br>
+Depenent de la distància amb els clients, es modularà més agressivament proporcionant una major amplada de banda, no obstant això, si el client està lluny, modularà amb 64-QAM proporcionant una menor amplada de banda.
+<br>
+<div align="center">
+  <img src="/images/bloc/2022/04/foto5.jpg" />
+</div>
+<br></p>
+
+<p>A les primeres versions de wifi, s&rsquo;utilitzava la tècnica de modulació OFDM, on cada usuari tenia un interval de temps o tot un canal d&rsquo;amplada de banda.
+Wi-Fi 6 i Wi-Fi 6E fa servir OFDMA, que permet lliurar els paquets de manera més regular i uniforme, i els usuaris no han d&rsquo;esperar tant de temps.
+<br>
+<table border="0" align="center">
+  <tr>
+    <td align="center">
+      <div align="center">
+        <img src="/images/bloc/2022/04/foto6.jpg" />
+      </div>
+    </td>
+    <td align="center">
+      <div align="center">
+        <img src="/images/bloc/2022/04/foto7.jpg" />
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>Portadores OFDM de Wi-Fi 5 transportant la informació d&rsquo;un client darrere d&rsquo;un altre</td>
+    <td>Portadores OFDMA de Wi-Fi 6 en grups transportant la informació de diversos clients alhora</td>
+  </tr><br />
+</table>
+<br></p>
+
+<h5 id="mimo"><strong>MIMO</strong></h5>
+
+<p>Wi-Fi 6 i Wi-Fi 6E utilitza com a màxim 8 antenes que té el router wifi o el punt d&rsquo;accés. La tecnologia MU-MIMO permet augmentar la velocitat i el rendiment de la xarxa wifi.
+<br>
+<div align="center">
+  <img src="/images/bloc/2022/04/foto8.png" />
+</div>
+<br></p>
+
+<h5 id="seguretat"><strong>Seguretat</strong></h5>
+
+<p>Wi-Fi 6E és més segura que les versions anteriors, ja que
+Wi-Fi Alliance està exigint la certificació de seguretat WPA3, que reforça el xifratge i ho fa mitjançant un xifratge de 192 bits front els 128 dels seus predecessors.
+<br><br>
+La seguretat WPA3 no és obligatoria a Wi-Fi 6.
+<br><br></p>
+
+<h6 id="inici-taulacontiguts-1"><a href="#TaulaContiguts">Inici</a></h6>
+
+<h3 id="Equipament"><strong>Equipament Wi-Fi 6E Certificat</strong></h3>
+
+<p>Wi-Fi Alliance certifica que els equips fabricats per les marques compleixen amb l&rsquo;estàndard i siguin interoperables entre si.
+A la web oficial de productes de Wi-Fi Alliance (<a href="https://www.wi-fi.org/product-finder-results">https://www.wi-fi.org/product-finder-results</a>) apareixen tots els dispositius certificats per l&rsquo;organització i quins equips estan certificats amb l&rsquo;últim estàndard Wi-Fi 6E.
+<br><br>
+A la secció de  &lt;&lt; <strong>Featured Capabilites</strong> &gt;&gt; es pot triar l&rsquo;opció de &lt;&lt; Wi-Fi CERTIFIED 6 &gt;&gt; exclusivament. Com es pot veure, no apareix enlloc la certificació Wi-Fi 6E, el motiu és que els Wi-Fi 6E estan inclosos dins dels Wi-Fi 6.
+<br><br>
+En la secció de &lt;&lt; <strong>All Capabilities</strong> &gt;&gt;  es selecciona i es desplegar l&rsquo;opció de &lt;&lt; <strong>Connectivity</strong> &gt;&gt;. En aquest menú es tria l&rsquo;opció de <strong>6 GHz Spectrum Capabilities</strong>, i així es filtra tots els equips amb l&rsquo;últim estàndard Wi-Fi 6E, perquè els equips Wi-Fi 6 normals tan sols poden operar en la banda de 2,4 GHz i en 5 GHz, ja que no són compatibles amb la banda de 6 GHz.
+<br><br>
+És possible que existeixin altres models amb Wi-Fi 6E però que encara no han passat la certificació de la Wi-Fi Alliance.</p>
+
+<h2 id="RequerimentsTecnicsRiscos"><strong>Requeriments tècnics i riscos</strong></h2>
+
+<p>Les xarxes wifi en la banda de 6 GHz son una novetat de l&rsquo;any 2021, i és molt possible que apareguin problemes.</p>
+
+<p>Els requisits necessaris per a poder connectar-se són:</p>
+
+<ul>
+<li><strong>Tenir un router wifi  o punt d’accés compatible amb Wi-Fi 6E</strong>. Veure dispositius certificats per Wi-Fi Alliance.</li>
+<li><strong>Targeta wifi o client compatible</strong>. Per connectar amb un ordinador, es necessitarà instal·lar una targeta de xarxa Intel AX210, AX211 o AX411. En el cas de voler connectar amb un telèfon intel·ligent o tauleta, s’haurà de revisar el processador principal de l&rsquo;equip i mirar en la web oficial si és compatible amb aquesta banda de freqüències. Tots els telèfons intel·ligents i tauletes amb el processador Qualcomm Snapdragon 888 o superior són compatibles amb aquesta banda de freqüències.</li>
+<li><strong>Drivers a l&rsquo;última versió</strong>. Si es connecta des d&rsquo;un ordinador, és totalment necessari comptar amb els darrers drivers de les targetes de xarxa compatibles instal·lats en l&rsquo;equip, en cas contrari, es podrien trobar fallades inesperades: errors de connexió aleatoris, problemes amb la cobertura i fins i tot talls en la xarxa wifi.</li>
+<li><strong>Sistema operatiu compatible</strong>: Windows 10 Pro o anteriors, no són compatibles amb el Wi-Fi 6E. És totalment necessari Windows 10 Pro amb l&rsquo;última versió de «Insider» de Microsoft, o bé instal·lar el nou sistema operatiu Windows 11. Altres sistemes operatius s’espera que siguin compatibles amb versions posteriors.</li>
+</ul>
+
+<p>En cas de complir els requisits tècnics, es poden trobar diferents problemes a l’hora de connectar-se com:</p>
+
+<ul>
+<li>No detectar la xarxa Wi-Fi de 6 GHz.</li>
+<li>No poder utilitzar WPA2 o deixar-la sense clau. És necessari fer servir OWE (Enhanced Open) per a no tenir autenticació però sí que xifrat de dades, o bé fer servir WPA3-Personal per a tenir autenticació i xifratge de dades.</li>
+<li>Poca cobertura en aquesta banda, ja que utilitzar bandes de freqüència molt elevades, els obstacles poden suposar una reducció considerable de cobertura sense fils.</li>
+<li>Tenir talls a la xarxa wifi per no tenir bona cobertura.<br /></li>
+<li>Igual que amb qualsevol tecnologia emergent, l&rsquo;adopció de Wi-Fi 6E té el potencial per crear nous riscos de ciberseguretat, com vulnerabilitats.</li>
+</ul>
+
+<h6 id="inici-taulacontiguts-2"><a href="#TaulaContiguts">Inici</a></h6>
+
+<h2 id="CaracteristiquesPrincipals"><strong>Visió general de Wi-Fi 7 (Esborrany 802.11be)</strong></h2>
+
+<p>Encara que Wi-Fi 6E  acaba de llançar-se al públic, ja es parla de Wi-Fi 7 i del que vindrà en els propers anys.
+Wi-Fi 7 és  capaç de transmetre un senyal de vídeo 8K sense comprimir amb 20 Gbps de cabal i una latència menor de 5 ms amb la finalitat que les xarxes sense fils siguin apropiades per a aplicacions futures de realitat virtual, augmentada i de gaming.
+<br><br></p>
+
+<h5 id="CaracteristiquesWifi7"><strong>Característiques de Wi-Fi 7</strong></h5>
+
+<ul>
+<li><p><strong>Ample de banda del canal fins a 320 MHz</strong> : Amb Wi-Fi 5 i 6 es poden usar amples de canal de fins a 160 MHz unint 8 canals convencionals de 20 MHz. Wi-Fi 7 duplica aquesta xifra permetent unir fins a 16 canals. A més, no és necessari que aquests siguin contigus, la qual cosa és útil per a sumar canals amb poc ús repartits al llarg de la banda. De totes maneres aquesta enorme grandària de canal no pot utilitzar-se en tots els entorns. En la banda 5 GHz només hi cap un canal no contigu de 320 GHz. El mateix passa en la nova banda de 6 GHz, pel fet que a Europa tenim la meitat d&rsquo;espectre habilitat que als EUA.</p></li>
+
+<li><p><strong>Fins a 16 antenes MIMO</strong> : Duplica la quantitat màxima d’antenes fins  a 16, la qual cosa directament duplica el cabal respecte a les 8 antenes de Wi-Fi 6. Encara que els clients utilitzin habitualment només dos fluxos, es podrà veure routers Wi-Fi 7 amb 16 antenes en cada banda.
+<br>
+<div align="center">
+<img src="/images/bloc/2022/04/foto9.jpg" />
+</div>
+<br></p></li>
+
+<li><p><strong>Modulació 4096-QAM</strong> : Més antenes no només significa més velocitat i penetració del senyal, sinó que aquesta arriba amb menys soroll, així que en alguns punts propers al router o punt d’accés, la wifi es podrà modular a 4096-QAM, la qual cosa suposa de nou, un increment considerable de cabal.
+Són aquestes tres primeres millores: 320 MHz, 16 antenes i 4096-QAM  les que permetran a Wi-Fi 7 lliurar la velocitat de 46,1 Gbps per a tots els clients connectats en una banda quan s&rsquo;utilitzi la millor configuració.</p></li>
+
+<li><p><strong>Agregació de bandes amb MLO</strong> : MLO és una de les grans novetats de Wi-Fi 7 que pren la característica que ha permès a les xarxes mòbils oferir connexions més resilients i amb major capacitat.
+Consisteix a sumar la connexió simultània amb el router a través de diverses bandes per a crear un únic enllaç lògic. La velocitat total que s&rsquo;obté és la suma del cabal que aporta cada banda i com que cada freqüència té propietats diferents, com la de 2,4 GHz amb el seu major abast, la connexió aconsegueix ser més fiable. També influeix positivament en una millor latència.
+<br>
+<div align="center" width="70%">
+<img src="/images/bloc/2022/04/foto10.jpg" />
+</div>
+<br></p></li>
+</ul>
+
+<p>Hi ha altres millores que s&rsquo;estan definint i no tenen a veure amb la velocitat, sinó amb millorar la convivència entre punts wifi veïns o fer la comunicació més robusta:</p>
+
+<ul>
+<li><strong>Multi-Access Point Coordination</strong> on els punts d&rsquo;accés utilitzen els mateixos canals i es coordinen entre ells per a acordar la potència mínima imprescindible, de manera que puguin emetre alhora sense molestar-se.</li>
+
+<li><p><strong>Hybrid Automatic Repeat Request (HARQ)</strong>, es un sistema de control d&rsquo;errors, més eficient que recupera els paquets corromputs, durant la transmissió.
+<br></p>
+
+<h6 id="inici-taulacontiguts-3"><a href="#TaulaContiguts">Inici</a></h6></li>
+</ul>
+
+<h5 id="SortirWifi7"><strong>Quan sortirà Wi-Fi 7</strong></h5>
+
+<p>Amb la primera versió de l&rsquo;esborrany publicada, el grup de treball 802.11be del IEEE disposa de dos anys per publicar al maig de 2023, el quart esborrany del document en el qual, es basaran els fabricants que vulguin ser els primers a posar equips Wi-Fi 7 al mercat, aprofitant que Wi-Fi Alliance estrenarà el seu programa de certificació.
+<br>
+<div align="center" >
+  <img src="/images/bloc/2022/04/foto11.png" />
+</div>
+<br></p>
+
+<h2 id="Conclusions"><strong>Conclusions</strong></h2>
+
+<p>La característica principal de Wi-Fi 6E respecte a Wi-Fi 6 és que cobreix l&rsquo;espectre de 6 GHz i permet tenir <strong>canals addicionals</strong> i especialment amplis en 160 MHz, la qual cosa, minimitza la congestió i permet connexions de molts <strong>més dispositius</strong>. A més, en tenir un major nombre de canals a les bandes on es poden transmetre grans quantitats de dades, Wi-Fi 6E donarà una <strong>major velocitat</strong> punta.
+<br><br>
+No sempre es podrà aprofitar aquesta velocitat, ja que el senyal té una capacitat menor de penetració i com més lluny del router o punt d&rsquo;accés, hi haurà una major pèrdua de velocitat.
+<br><br>
+Un factor important a tenir en compte, són els problemes de compatibilitat de Wi-Fi 6E amb dispositius antics. En el cas d&rsquo;implementar Wi-Fi 6E, s&rsquo;haurà de considerar el possible cost d&rsquo;actualització dels dispositius que s’hi vulguin connectar.
+En resum, Wi-Fi 6E a 6Hz aporta:</p>
+
+<ul>
+<li>Disposar de més canals wifi.</li>
+<li>Més dispositius connectats.</li>
+<li>Menys  interferències amb les xarxes wifi veïnes</li>
+<li>Major velocitats punta.</li>
+<li>Menor latència</li>
+<li>Més seguretat a la xarxa.</li>
+<li>Millor eficiència d&rsquo;energia</li>
+</ul>
+
+<h2 id="Referencies"><strong>Referències</strong></h2>
+
+<p><a href="https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-6">https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-6</a> <br>
+<a href="https://www.cisco.com/c/en/us/products/wireless/what-is-wi-fi-6e.html">https://www.cisco.com/c/en/us/products/wireless/what-is-wi-fi-6e.html</a> <br>
+<a href="https://www.redeszone.net/tutoriales/redes-wifi/problemas-soluciones-conectar-wi-fi-6e-6ghz/">https://www.redeszone.net/tutoriales/redes-wifi/problemas-soluciones-conectar-wi-fi-6e-6ghz/</a>  <br>
+<a href="https://www.xataka.com/basics/que-wi-fi-6-que-ventajas-tiene-respecto-a-version-anterior">https://www.xataka.com/basics/que-wi-fi-6-que-ventajas-tiene-respecto-a-version-anterior</a> <br>
+<a href="https://www.redeszone.net/tutoriales/redes-wifi/canales-wi-fi-6e-6ghz-disponibles-europa/">https://www.redeszone.net/tutoriales/redes-wifi/canales-wi-fi-6e-6ghz-disponibles-europa/</a> <br>
+<a href="https://www.csoonline.com/article/3628205/what-cisos-need-to-know-about-wi-fi-6e.html">https://www.csoonline.com/article/3628205/what-cisos-need-to-know-about-wi-fi-6e.html</a> <br>
+<a href="https://bandaancha.eu/articulos/todas-canales-bandas-wifi-2-4-5-6ghz-10117">https://bandaancha.eu/articulos/todas-canales-bandas-wifi-2-4-5-6ghz-10117</a> <br></p>
+
+<h2 id="Glossari"><strong>Glossari</strong></h2>
+
+<ul>
+<li><strong>QAM</strong> (de l’anglès, Quadrature Amplitude Modulation) Modulació d&rsquo;amplitud en quadratura és una forma de modulació que s&rsquo;utilitza àmpliament per a la modulació dels senyals de dades sobre un portador utilitzat per a les comunicacions de ràdio.</li>
+<li><strong>OFDM</strong> (de anglès Multiplexació per Divisió Ortogonal de Freqüencies)  consisteix a enviar un conjunt d&rsquo;ones portadores de diferents freqüències, on cadascuna transporta informació, sent modulades en QAM o modulació per desplaçament de fase.</li>
+<li><strong>OFDMA</strong> (de l&rsquo;anglès Orthogonal Frequency Fivision Multiple Access) L&rsquo;accés múltiple per divisió de freqüències ortogonals  és la versió multiusuari de la coneguda OFDM, multiplexació per divisió de freqüències ortogonals.</li>
+<li><strong>MIMO</strong> (de l’anglès  de Multiple-input Multiple-output). És una tecnologia sense fils que utilitza diversos transmissors i receptors per a poder enviar i rebre més dades al mateix temps.</li>
+<li><strong>MU-MIMO</strong> significa que múltiples dispositius podran rebre de manera simultània diferents fluxos de dades.</li>
+<li><strong>PSK</strong>  (de l’anglès Pre-Shared Key). clau secreta compartida amb anterioritat.</li>
+<li><strong>WPA3</strong> (de l’ anglès Wi-Fi Protected Access) Claus xifrades de 192 bits, molt més difícils de desxifrar.</li>
+<li><strong>OWE</strong> (de l’anglès Enhanced Open) és un nou estàndard de seguretat WFA per a xarxes públiques basat en el xifratge sense fil oportunista (OWE). Proporciona encriptació i privacitat en xarxes obertes sense contrasenya. Enhanced Open no proporciona autenticació.</li>
+<li><strong>MLO</strong> (de  l’anglès Multi-link Operation) la tecnologia d&rsquo;operació multi enllaç  que agrega de manera simultània múltiples canals en diferents bandes i permet que el trànsit de xarxa flueixi sense problemes encara que hi hagi interferències o congestió.</li>
+</ul>
+
+<h6 id="inici-taulacontiguts-4"><a href="#TaulaContiguts">Inici</a></h6>
+
+<p><br>
+<br></p>
+
+<h6 id="unitat-arquitectura-d-entorn-digital-de-treball-br"><strong>Unitat Arquitectura d&rsquo;Entorn Digital de Treball</strong> <br></h6>
+
+<h6 id="direcció-arquitectura-i-components-transversals"><strong>Direcció Arquitectura i Components Transversals</strong></h6>
+
+
+					
+
+					
+						<a name="comments"></a>
+						<hr />		
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arquitectura-ctti" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					
+				</div>	
+
+			</article>	
+
+
+	</section>	
+
+		<div class="fons_footer ">
+		<footer class="container center-block shadowBox2">
+			<div class="shadow2"></div>
+			<div class="row footer_tab_ord">
+
+				<div class="footer_tab_bot col-sm-12">
+					<div class="avis_legal">
+
+						<div id="fAvisLegal">
+							<div>
+								<div class="hidden-xs">
+									<a href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" alt="www.gencat.cat"
+										/></a>
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								<div class="visible-xs avis_legal">
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								
+								<div class="fi_peu visible-xs">
+									<a title="www.gencat.cat" href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" 
+										alt="www.gencat.cat" /></a> <a class="torna_amunt pull-right"
+										href=" javascript:tornarAmunt();" title="Torna amunt">
+										<p>Torna amunt</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="/js/master.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script src="/js/custom.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+if(location.hostname!=="localhost"){
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', "UA-59408075-1", 'auto');
+	ga('send', 'pageview', {
+	  	'page': location.pathname + location.search  + location.hash
+	  }
+	);
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>

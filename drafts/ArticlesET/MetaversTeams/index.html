@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html xml:lang="ca-ES" lang="ca-ES" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title></title>
+		<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link href="/css/master.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/canigo.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+
+	<script>
+		document.write("<meta name=\"titol\" content=\"\" />");
+		document.write("<meta name=\"description\" content=\"\" />");
+	</script>
+
+	
+
+</head>
+<body class="single">
+	<div class="contenidor unfixed">
+
+				
+
+		<header class="fons_header navbar navbar-default z-index-menu">
+			<div class="container" role="menu">
+				<div class="row clearfix menuNav">
+					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
+						<button type="button" onclick="amunt();" title="Menu"
+							class="navbar-toggle pull-left" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+
+					<div class="col-md-3 col-xs-6 col-offset-2 column visible-xs titol-mobil">
+						
+						<span class="white titol-mobil-destacat">canigo.ctti</span><span class="white">.gencat.cat</span>
+					</div>
+
+					<div class="col-md-3 col-xs-3 column visible-xs coloca1">
+						<button onclick="amunt();" type="button" title="Cerca"
+							class="ico_cerca " data-toggle="collapse" data-target=".dos">
+						</button>
+					</div>
+
+				</div>
+
+				<div class="collapse dos">
+					<div class="shadowBox">
+						<form class="navbar-form navbar-left primer" action="/cercador/" method="get"
+ 						onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
+							<div class="form-group">
+								<input type="search" class="form-control" name="q" id="cerca_cap"
+									title="Cerca"
+									placeholder="Cerca" />
+								<button type="button" title="Neteja" class="btn btn-default"></button>
+								<input type="submit" class="ocult" name="Cerca" value="Cerca" />
+							</div>
+						</form>
+					</div>
+				</div>	
+
+				<nav class="collapse navbar-collapse navbar-ex1-collapse ">
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-4 column">
+							<a class="img-responsive logo" title="Generalitat de Catalunya"
+								href="https://ctti.gencat.cat/">gencat.cat</a>
+							<button class="menu_tancar visible-xs collapsed"
+								data-target=".navbar-collapse" data-toggle="collapse"
+								title="Tancar"></button>
+						</div>
+
+						<div class="col-md-6 col-sm-8 column hidden-xs hidden-mg">
+							<form class="navbar-form cercador_vermell hidden-xs pull-right" action="/cercador/"  method="get" onsubmit="location.href=this.action+'?q='+this.cerca2.value; return false;">
+								<div class="form-group">
+									<label class="hidden" for="cerca2">Cerca</label>
+									<input id="cerca2" class="form-control" type="search" 
+									placeholder="Cerca" name="q" title="Cerca">
+									<input class="btn btn-default" type="submit" title="Cerca" value="">
+								</div>
+							</form>
+
+							
+
+						</div>
+
+					</div>
+					<div class="col-xs-12 hidden-xs" id="nomPortal">
+                    	<span class="titol-cap-nou">Centre de Telecomunicacions i Tecnologies de la Informació</span>
+                    </div>					
+					<ul class="nav navbar-nav">
+
+			        	
+
+						<li>
+							<a class="dropdown-toggle" href='/' data-toggle='_dropdown'>Inici</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/arqctti' data-toggle='_dropdown'>Arquitectura CTTI</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/blog' data-toggle='_dropdown'>Blog</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cloud' data-toggle='_dropdown'>Cloud</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/canigo-fwk-docs' data-toggle='_dropdown'>Canigó</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sic' data-toggle='_dropdown'>SIC</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sgde' data-toggle='_dropdown'>SGDE</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/gicar' data-toggle='_dropdown'>GICAR</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cs' data-toggle='_dropdown'>Centres de Suport</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/dadesref' data-toggle='_dropdown'>Gestió Tècnica de Dades</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/eventhub' data-toggle='_dropdown'>EventHub</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/rpa' data-toggle='_dropdown'>RPA</a>
+						</li>
+
+						
+
+					</ul>
+
+				</nav>
+			</div>
+		</header>
+
+
+
+	</div>
+
+	<section class="border-start">
+
+						
+			
+
+			<article class="bgGrey">
+				<div class="container">
+					<div class="row">
+						<div class="capcelera_basica col-sm-12">
+							<div class="capcelera_basica_cont">
+								<ol class="breadcrumb filariana hidden-xs">
+									<li>
+										<a href="/">Inici</a>
+									</li>
+									<li class="breadcrumbs2">
+									
+										<a href="/drafts">
+											
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										</a>
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									
+									</li>
+
+								</ol>
+
+								<h1 class="capcelera_flotant pull-left" data-txt=".title">
+									
+
+										
+											
+
+
+
+
+	
+
+
+										
+
+									
+								</h1>
+
+								
+
+								
+								
+
+								
+
+								
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</article>
+
+			
+
+
+		   <div class="padding-xs container">
+	    	
+           </div>
+           
+			<article class="padding-xs padding-sm padding-md contingut">				
+				<div class="container">
+ 		
+					
+				
+
+	
+
+
+					
+
+						
+
+<p>Article basat en el Metavers de Teams</p>
+
+<hr />
+
+<h1 id="introducció-al-metavers"><strong>Introducció al Metavers</strong></h1>
+
+<p>Probablement hem començat a escoltar recentment la paraula <strong>Metavers</strong> al nostre voltant i en aquesta publicació, intentarem aclarir de què es tracta realment i com podria afectar aquesta tecnologia a la forma de treballar. Microsoft actualment té una línia de treball que té previst que presenti al 2022, per ampliar l’eina col·laborativa Teams al Metavers.
+<br>
+El terme Metavers (acrònim de «meta-» més enllà i «univers») té el seu origen a la novel·la Snow Crash de 1992 on Neal Stephenson es va referir al Metavers com un món 3D amb avatars com alternatives a persones reals.
+<br>
+Encara que no hi ha una definició concreta del Metavers, podríem dir que es tracta d’una plataforma digital que proporciona un entorn immersiu a l’usuari, on convergeix la realitat física, la realitat augmentada i la realitat virtual, en un únic espai compartit, en línia i habitat per representacions digitals de persones, llocs i objectes.
+<br>
+La majoria d&rsquo;experts consideren els videojocs com el punt d&rsquo;inici del Metavers, és molt conegut el joc Second Life, un programa que permetia als seus usuaris la immersió en un món virtual, no obstant, és ara amb la tecnologia blockchain que el Metavers ens pot oferir el proper salt evolutiu.
+<br>
+El Metavers s&rsquo;està estenent des del 2021 més ràpid que el big data, la intel·ligència artificial, blockchain, NFT (&lsquo;non-fungible token&rsquo;) o el IoT (Internet de les coses) i ho està fent de la mà de grans tecnològiques com Meta (Facebook) , Google, Nvidia i Microsoft, però encara existeixen molts reptes que s’hauran de superar, per fer els viatges al Metavers més emocionant, còmode i amb la màxima privacitat possible.
+<br>
+És important indicar que no existeix un únic metavers, i la seva interconnexió encara trigarà.
+Alguns exemples de metavers:</p>
+
+<table border=0 width=500>
+<tr>
+  <td >
+    <div align="left">
+        <img src="/images/bloc/2022/02/DifMetaversos.png" style="width:500px;" />
+    </div>
+  </td>
+  <td>
+    **Catvers** és l’espai virtual referent català. És un metavers desenvolupat a Catalunya on l'idioma vehicular és el català.<br><br>**Microsoft** treballa en la plataforma col·laborativa **Mesh for Teams** on avatars digitals podran poden reunir-se, compartir fitxers i programes d'Office en un món virtual.<br><br>**Epic Games** amb el videojoc **Fortnite**, permet experiències socials com festes de ball, concerts de música virtual en el seu metavers, etc. Els usuaris paguen per construir els seu propis entorns i adaptar el seus avatars.<br><br>**Nvidia** especialitzada en desenvolupament d'unitats de processament gràfic, disposa d’Omniverse, un metavers per la creació i simulació virtual utilitzada per crear simulacions de fàbriques i edificis en el món real.
+  </td>
+</tr>
+</table>
+
+<hr />
+
+<h1 id="metavers-dins-microsoft-teams"><strong>Metavers dins Microsoft Teams</strong></h1>
+
+<p>El Metavers de Microsoft amb Mesh per Teams serà un lloc on el món digital i el món físic s’uniran en una nova plataforma digital de col·laboració, que donarà cabuda tant al món domèstic com l’empresarial amb l’ús d’avatars pels usuaris i amb l’ús opcional de les ulleres Microsoft de realitat augmentada “HoloLens” que potenciarà l’experiència immersiva al món virtual.</p>
+
+<div align="center">
+  <img src="/images/bloc/2022/02/Hololens_detall.JPG" style="width:500px;" />
+</div>
+
+<p>Microsoft té previst que es pugui començar a provar les característiques de Microsoft Mesh for Teams durant el 2022 en mode preview.
+<br>
+A continuació s’enumeren algunes d’elles:</p>
+
+<ul>
+<li>Integració nativa amb Office 365.</li>
+<li>Compatibilitat entre dispositius. Totes les aplicacions habilitades per Mesh seran accessibles mitjançant telèfons, tauletes i ordinadors i està previst que es pugui accedir a Mesh per Teams amb dispositius de realitat immersiva, com els auriculars de realitat virtual (VR) i Ulleres Hologràfiques (Microsoft HoloLens).</li>
+<li>Traducció en temps real de diverses llengües permetent col·laborar i interactuar de forma més àgil.</li>
+</ul>
+
+<div align="center">
+  <img src="/images/bloc/2022/02/TraduirTempsReal.png" style="width:500px;" />
+</div>
+
+<p>Microsoft Mesh permetrà diversos graus d’immersió al metavers:</p>
+
+<div align="center">
+  <img src="/images/bloc/2022/02/Graus_Immersio.png" style="width:500px;" />
+</div>
+
+<p>Addicionalment Microsoft Mesh facilita una plataforma de desenvolupament d’aplicacions de realitat mixta per a dissenyar aplicacions immersives i multiusuari.
+<br>
+A continuació es mostren els components de la plataforma Microsoft Mesh per a desenvolupadors:
+<br>
+<div align="center">
+  <img src="/images/bloc/2022/02/Mesh_Platform.JPG" style="width:500px;" />
+</div></p>
+
+<p>El nucli de la plataforma de desenvolupament és Cloud Azure amb serveis d&rsquo;identitat com Azure Active Directory i Microsoft Accounts, que permeten usuaris degudament autenticats i autoritzats a una sessió segura i de confiança.
+<br>
+Més enllà de la plataforma bàsica, hi ha capacitats clau impulsades per IA que permeten a Mesh abordar alguns dels reptes tècnics més complicats amb la possibilitat d&rsquo;escenaris massius en línia multiusuari (MMO) per a la realitat mixta. Aquests inclouen presència immersiva, mapes espacials, renderització hologràfica i sincronització multiusuari.
+<br>
+Per aprofitar aquestes capacitats i les funcions bàsiques de la plataforma, <strong>Mesh ofereix un SDK per a desenvolupadors multiplataforma perquè els desenvolupadors puguin crear aplicacions orientades a la seva elecció de plataforma i dispositius</strong>, ja siguin AR, VR, ordinadors o telèfons. Actualment és compatible amb Unity juntament amb C++ i C# nadius, però en els propers mesos, Mesh també tindrà suport per a Unreal, Babylon i React Native. Més enllà d&rsquo;accedir a les capacitats, l&rsquo;SDK també proporciona construccions UX preconstruïdes perquè els desenvolupadors les utilitzin a les aplicacions. Aquests prefabricats estan dissenyats per fer que el procés de desenvolupament sigui més senzill i ràpid per participar en experiències de realitat mixta.
+<br></p>
+
+<ul>
+<li><p><strong>Presència immersiva:</strong> un aspecte fonamental dels escenaris multiusuari és poder representar els participants de diferents formes segons el dispositiu des del qual s&rsquo;uneixen. Mesh ofereix la presència en 3D més accessible amb avatars representatius mitjançant sensors interiors dels dispositius. La plataforma Mesh inclou una plataforma d&rsquo;avatars i un estudi de personalització perquè es puguin utilitzar els avatars de la caixa. La plataforma també és capaç d&rsquo;alimentar les instal·lacions d&rsquo;avatar existents amb els seus models de moviment impulsats per IA per capturar moviments i expressions precisos coherents amb l&rsquo;acció de l&rsquo;usuari.
+A més dels avatars, Mesh també permet l&rsquo;holoportació de 360 graus més fotorealista amb sensors exteriors. Aquests sensors exteriors poden ser una configuració de càmera personalitzada com el Mixed Reality Capture Studio, que ajuda a capturar en 3D amb total fidelitat o podria ser Azure Kinect que captura imatges detectades en profunditat per ajudar a produir les representacions hologràfiques. Un cop produïts els hologrames, aquests es poden utilitzar dins d&rsquo;aplicacions habilitades per Mesh en auriculars de realitat mixta immersives o telèfons, ordinadors i tauletes quotidians, per holoportar els usuaris en les seves representacions més reals i oferir una sensació de presència real.
+<br></p></li>
+
+<li><p><strong>Mapes espacials:</strong> la creació d&rsquo;aplicacions que persisteixin contingut hologràfic en el món real requereix una perspectiva comuna de l&rsquo;espai al voltant de cada participant, així com una comprensió del món físic. Tant si es tracta de registres de servei per a un tècnic com d&rsquo;orientació per a un client, col·locar hologrames de manera fiable que puguin persistir en el temps, l&rsquo;espai i els dispositius és una necessitat habitual. Tot això està habilitat a Mesh mitjançant mapes espacials. Abans de Mesh, cada dispositiu té la seva pròpia visió local del món. Amb Mesh, aquests cachés locals es fusionen i optimitzen per tenir una comprensió global de l&rsquo;espai/entorn en què es troben. Aquest marc permet ancorar el contingut, compartir els punts de vista del dispositiu i col·laborar amb models 3D.
+Mesh ajuda a crear un mapa del nostre món que sigui ordres de magnitud més precís que el GPS, i fins i tot pot funcionar en llocs sense accés al GPS. Ajuda a oferir &ldquo;hologrames bloquejats pel món&rdquo; que es poden vincular a punts d&rsquo;interès específics. A més, Mesh pot generar la mateixa comprensió alineada amb el disseny i la geometria precisos d&rsquo;un objecte determinat, cosa que permet als desenvolupadors crear fàcilment aplicacions que poden requerir la superposició d&rsquo;objectes amb informació visual com instruccions, registres de servei i altres dades importants, alineades amb precisió als components. de l&rsquo;objecte.
+<br></p></li>
+
+<li><p><strong>Renderització hologràfica:</strong> una instanciació per excel·lència de la vora intel·ligent i l&rsquo;arquitectura intel·ligent del núvol, la renderització hologràfica ofereix una fidelitat sense compromisos impulsada per Mesh, independentment del pressupost tèrmic i informàtic del dispositiu. La malla permet triar entre renderització local autònoma o renderització remota connectada al núvol sense problemes dins de la vostra aplicació, per a cada escena i model. Això ofereix la flexibilitat per dissenyar aplicacions que es poden optimitzar per a la latència i la fidelitat en funció del dispositiu en què s&rsquo;està experimentant. No només això, sinó que la renderització hologràfica també admet la majoria dels formats de fitxer 3D per renderitzar-se de manera nativa en aplicacions habilitades per malla, solucionant el repte d&rsquo;introduir els models 3D existents dels usuaris per a la col·laboració.
+<br></p></li>
+
+<li><p><strong>Sincronització multiusuari:</strong> crear una perspectiva comuna de l&rsquo;holograma i de l&rsquo;altre dins d&rsquo;una sessió de col·laboració és un gran repte. Dins de Mesh, aquest context compartit s&rsquo;habilita mitjançant la sincronització multiusuari. Això és el que il·lumina qualsevol actualització de poses, moviments i expressions dels participants o qualsevol transformació hologràfica que es produeixi a l&rsquo;espai. Tot això passa dins dels 100 mil·lisegons de latència, independentment de si l&rsquo;usuari es troba al mateix espai físic o a mig món. Tot això es veu augmentat amb àudio espacial a Mesh que crea la sensació d&rsquo;estar al mateix espai físic en un escenari multiusuari.</p></li>
+</ul>
+
+
+					
+
+					
+				</div>	
+
+			</article>	
+
+
+	</section>	
+
+		<div class="fons_footer ">
+		<footer class="container center-block shadowBox2">
+			<div class="shadow2"></div>
+			<div class="row footer_tab_ord">
+
+				<div class="footer_tab_bot col-sm-12">
+					<div class="avis_legal">
+
+						<div id="fAvisLegal">
+							<div>
+								<div class="hidden-xs">
+									<a href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" alt="www.gencat.cat"
+										/></a>
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								<div class="visible-xs avis_legal">
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								
+								<div class="fi_peu visible-xs">
+									<a title="www.gencat.cat" href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" 
+										alt="www.gencat.cat" /></a> <a class="torna_amunt pull-right"
+										href=" javascript:tornarAmunt();" title="Torna amunt">
+										<p>Torna amunt</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="/js/master.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script src="/js/custom.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+if(location.hostname!=="localhost"){
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', "UA-59408075-1", 'auto');
+	ga('send', 'pageview', {
+	  	'page': location.pathname + location.search  + location.hash
+	  }
+	);
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>

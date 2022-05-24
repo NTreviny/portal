@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Arquitectura CTTI. Generalitat de Catalunya </title>
+    <link>https://canigo.ctti.gencat.cat/sections/sic/</link>
+    <language>ca-es</language>
+    
+    
+    <updated>Thu, 07 Apr 2022 00:00:00 UTC</updated>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+         
+    <item>
+      <title>
+        
+        SIC. Desplegament de scripts a Oracle Database Server 19c al SIC 2.0
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2022-05-26-SIC-Desplegaments-automatics-Oracle19c_SIC20/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2022-05-26-SIC-Desplegaments-automatics-Oracle19c_SIC20/</guid>
+      <description>El SIC 2.0 permet el desplegament de scripts a Oracle Database Server 19c mitjançant la modalitat de desplegament automàtic.</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        SIC. Nova pipeline de pujada d&#39;imatges pròpies al registre corporatiu al SIC 3.0
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2022-05-26-SIC-Pipeline_pujada_imatges_registre_coorporatiu_SIC30/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2022-05-26-SIC-Pipeline_pujada_imatges_registre_coorporatiu_SIC30/</guid>
+      <description>El SIC 3.0 proporciona un nou model de pipeline per a la pujada d&#39;imatges pròpies al Registre d&#39;Imatges corporatiu (BAKE).</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        SIC. Validació de fitxers YML de configuració al SIC 3.0
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2022-05-26-SIC-Validacio-fitxers-yml_SIC30/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2022-05-26-SIC-Validacio-fitxers-yml_SIC30/</guid>
+      <description>El SIC 3.0 incorpora la validació de format i contingut dels fitxers YML de configuració per a assegurar que acompleixen l&#39;especificació.</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        Canigó. Actualització archetype 1.7.5 i plugin Eclipse 1.8.5
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2022-05-23-CAN-Actualitzacio_archetype_1_7_5_plugin_eclipse_1_8_5/</link>
+      <pubDate>Mon, 23 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2022-05-23-CAN-Actualitzacio_archetype_1_7_5_plugin_eclipse_1_8_5/</guid>
+      <description>S&#39;ha publicat una nova versió de l&#39;archetype i del plugin de l&#39;eclipse de Canigó per a generar projectes amb Canigó 3.6.5</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        Canigó. Publicació nova versió 3.6.5
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2022-05-23-CAN-actualitzacio-canigo-3_6_5/</link>
+      <pubDate>Mon, 23 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2022-05-23-CAN-actualitzacio-canigo-3_6_5/</guid>
+      <description>S&#39;ha publicat la nova versió de Canigó 3.6.5 </description>
+    </item>
+         
+    <item>
+      <title>
+        
+          BLOG. 
+        
+        Windows Hello
+      </title>
+      <link>https://canigo.ctti.gencat.cat/blog/2022/05/WindowsHello/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2022/05/WindowsHello/</guid>
+      <description>L&#39;autenticació és un punt crític, ja que a més de requerir seguretat també s’intenta garantir una bona experiència, degut a aquest motiu les solucions com Windows Hello han fet avançar aquesta tendència.</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        SIC. Actualització de versió Jenkins del SIC 2.0
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2022-05-07-SIC-act_versio_ci_sic20/</link>
+      <pubDate>Sat, 07 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2022-05-07-SIC-act_versio_ci_sic20/</guid>
+      <description>El dia 07/05/2022 es va dur a terme l&#39;actualització del Servei d&#39;Integració Contínua (Jenkins) del SIC 2.0</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        SIC. Actualització de versió Nexus
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2022-05-07-sic-act_versio_nexus/</link>
+      <pubDate>Sat, 07 May 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2022-05-07-sic-act_versio_nexus/</guid>
+      <description>El dia 07/05/2022 es va dur a terme l&#39;actualització del Servei de Repositori d&#39;Artefactes (Nexus)</description>
+    </item>
+         
+    <item>
+      <title>
+        
+        Publicació Catàleg Tècnic de Dades - Abril22
+      </title>
+      <link>https://canigo.ctti.gencat.cat/noticies/2022-04-27_Gestio_tecnica_dades/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/noticies/2022-04-27_Gestio_tecnica_dades/</guid>
+      <description>S&#39;ha actualitzat el Catàleg Tècnic de Dades per incorporar i modificar entitats.</description>
+    </item>
+         
+    <item>
+      <title>
+        
+          BLOG. 
+        
+        Wi-Fi 6E: Visió General i evolució
+      </title>
+      <link>https://canigo.ctti.gencat.cat/blog/2022/04/WiFi6e/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/blog/2022/04/WiFi6e/</guid>
+      <description>Ja fa 35 anys que va aparèixer la primera versió de l&#39;estàndard Wi-Fi, conegut com a IEEE 802.11. La necessitat de més velocitat i més dispositius connectats a la xarxa wifi ha esdevingut  la darrera versió Wi-Fi 6E a 6 GHz i  ja  s&#39;hi està treballant en la nova versió de Wi-Fi 7.</description>
+    </item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <item>
+      <title>SIC. Actualització de versió Gitlab</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/2019-07-19-sic-act_versio_scm/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/2019-07-19-sic-act_versio_scm/</guid>
+      <description>Durant els mesos de Maig i Juliol s&#39;han dut a terme actualitzacions del Servei de Custodia de Codi (Gitlab)</description>
+    </item>
+    
+    <item>
+      <title>SIC. Actualització de versió Jenkins</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/2019-07-19-sic-act_versio_ci/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/2019-07-19-sic-act_versio_ci/</guid>
+      <description>Durant els mesos de Maig i Juliol s&#39;han dut a terme actualitzacions del Servei d&#39;Integració Contínua (Jenkins)</description>
+    </item>
+    
+    <item>
+      <title>SIC. Canvi de lots segons la nova contractació 2019</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/2019-05-06-sic-canvi-lots/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/2019-05-06-sic-canvi-lots/</guid>
+      <description>El dia 01/06/2019 es farà efectiva la nova configuració de lots de les aplicacions en base a la nova contractació de proveïdors del Centre de Telecomunicacions i Tecnologies de la Informació de la Generalitat de Catalunya</description>
+    </item>
+    
+    <item>
+      <title>Millores i actualització documentació del Servei de Binaris</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/2019-02-22-actualitzacio-doc-binaris/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/2019-02-22-actualitzacio-doc-binaris/</guid>
+      <description>Arran de diferents consultes realitzades per proveïdors d&#39;aplicacions, s&#39;han realitzat millores en el Servei de Binaris i actualitzat la documentació de referència</description>
+    </item>
+    
+    <item>
+      <title>Cloud. Registre Docker privat corporatiu</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/2018-07-06-registre-docker/</link>
+      <pubDate>Fri, 06 Jul 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/2018-07-06-registre-docker/</guid>
+      <description>Des de Suport Cloud s&#39;ha habilitat un registre Docker privat corporatiu integrat amb el SIC (Servei d&#39;Integració Contínua)</description>
+    </item>
+    
+    <item>
+      <title>SIC. Actualització anual dels productes del SIC</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/2018-06-26-UpgradeSIC/</link>
+      <pubDate>Tue, 26 Jun 2018 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/2018-06-26-UpgradeSIC/</guid>
+      <description>S&#39;està treballant en l&#39;actualització tecnològica planificada de forma anual de la plataforma. En concret, durant el mes de setembre s&#39;actualitzarà la plataforma de d&#39;integració contínua Jenkins a la versió 2.121.1 i la versió de GitLab a la versió 10.8.4.</description>
+    </item>
+    
+    <item>
+      <title>SIC. Recordatori de pas de SVN a mode només lectura</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/2017-12-12-Recordatori-svn/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/2017-12-12-Recordatori-svn/</guid>
+      <description>Us recordem que a partir del 5 de febrer de 2018 el SVN del SIC passarà a mode només lectura. D&#39;aquesta manera, a partir d&#39;aquest dia no es podrà pujar noves versions de codi a aquesta plataforma.</description>
+    </item>
+    
+    <item>
+      <title>Repositori Maven2 de Red Hat al Nexus de SIC</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/sic-repo-maven2-redhat/</link>
+      <pubDate>Tue, 09 Aug 2016 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/sic-repo-maven2-redhat/</guid>
+      <description>Des d&#39;ara el Jenkins del SIC és capaç de resoldre dependències del repositori Maven2 de Red Hat a través del Nexus</description>
+    </item>
+    
+    <item>
+      <title>Repositori Maven d&#39;Oracle a Nexus de SIC</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/maven-oracle/</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/maven-oracle/</guid>
+      <description>Des d&#39;ara el Jenkins del SIC és capaç de resoldre dependències del repositori Maven d&#39;Oracle a través del Nexus</description>
+    </item>
+    
+    <item>
+      <title>Slave Jenkins a CPD2 disponible</title>
+      <link>https://canigo.ctti.gencat.cat/destacats/slave-cpd2/</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 UTC</pubDate>
+      
+      <guid>https://canigo.ctti.gencat.cat/destacats/slave-cpd2/</guid>
+      <description>Ja es troba disponible el slave de Jenkins a CPD2 IBM per a desplegaments en aquest CPD. Amb aquest slave es completa el desplegament de slaves Jenkins a tots els cpds Cloud i Critics de la Generalitat de Catalunya.</description>
+    </item>
+    
+  </channel>
+</rss>

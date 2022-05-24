@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xml:lang="ca-ES" lang="ca-ES" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Documentació de la Plataforma Corporativa de RPA</title>
+		<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link href="/css/master.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/canigo.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+
+	<script>
+		document.write("<meta name=\"titol\" content=\"Documentació de la Plataforma Corporativa de RPA\" />");
+		document.write("<meta name=\"description\" content=\"Documentació i formularis específics\" />");
+	</script>
+
+	
+
+</head>
+<body class="single">
+	<div class="contenidor unfixed">
+
+				
+
+		<header class="fons_header navbar navbar-default z-index-menu">
+			<div class="container" role="menu">
+				<div class="row clearfix menuNav">
+					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
+						<button type="button" onclick="amunt();" title="Menu"
+							class="navbar-toggle pull-left" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+
+					<div class="col-md-3 col-xs-6 col-offset-2 column visible-xs titol-mobil">
+						
+						<span class="white titol-mobil-destacat">canigo.ctti</span><span class="white">.gencat.cat</span>
+					</div>
+
+					<div class="col-md-3 col-xs-3 column visible-xs coloca1">
+						<button onclick="amunt();" type="button" title="Cerca"
+							class="ico_cerca " data-toggle="collapse" data-target=".dos">
+						</button>
+					</div>
+
+				</div>
+
+				<div class="collapse dos">
+					<div class="shadowBox">
+						<form class="navbar-form navbar-left primer" action="/cercador/" method="get"
+ 						onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
+							<div class="form-group">
+								<input type="search" class="form-control" name="q" id="cerca_cap"
+									title="Cerca"
+									placeholder="Cerca" />
+								<button type="button" title="Neteja" class="btn btn-default"></button>
+								<input type="submit" class="ocult" name="Cerca" value="Cerca" />
+							</div>
+						</form>
+					</div>
+				</div>	
+
+				<nav class="collapse navbar-collapse navbar-ex1-collapse ">
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-4 column">
+							<a class="img-responsive logo" title="Generalitat de Catalunya"
+								href="https://ctti.gencat.cat/">gencat.cat</a>
+							<button class="menu_tancar visible-xs collapsed"
+								data-target=".navbar-collapse" data-toggle="collapse"
+								title="Tancar"></button>
+						</div>
+
+						<div class="col-md-6 col-sm-8 column hidden-xs hidden-mg">
+							<form class="navbar-form cercador_vermell hidden-xs pull-right" action="/cercador/"  method="get" onsubmit="location.href=this.action+'?q='+this.cerca2.value; return false;">
+								<div class="form-group">
+									<label class="hidden" for="cerca2">Cerca</label>
+									<input id="cerca2" class="form-control" type="search" 
+									placeholder="Cerca" name="q" title="Cerca">
+									<input class="btn btn-default" type="submit" title="Cerca" value="">
+								</div>
+							</form>
+
+							
+
+						</div>
+
+					</div>
+					<div class="col-xs-12 hidden-xs" id="nomPortal">
+                    	<span class="titol-cap-nou">Centre de Telecomunicacions i Tecnologies de la Informació</span>
+                    </div>					
+					<ul class="nav navbar-nav">
+
+			        	
+
+						<li>
+							<a class="dropdown-toggle" href='/' data-toggle='_dropdown'>Inici</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/arqctti' data-toggle='_dropdown'>Arquitectura CTTI</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/blog' data-toggle='_dropdown'>Blog</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cloud' data-toggle='_dropdown'>Cloud</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/canigo-fwk-docs' data-toggle='_dropdown'>Canigó</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sic' data-toggle='_dropdown'>SIC</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sgde' data-toggle='_dropdown'>SGDE</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/gicar' data-toggle='_dropdown'>GICAR</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cs' data-toggle='_dropdown'>Centres de Suport</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/dadesref' data-toggle='_dropdown'>Gestió Tècnica de Dades</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/eventhub' data-toggle='_dropdown'>EventHub</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/rpa' data-toggle='_dropdown'>RPA</a>
+						</li>
+
+						
+
+					</ul>
+
+				</nav>
+			</div>
+		</header>
+
+
+
+	</div>
+
+	<section class="border-start">
+
+						
+			
+
+			<article class="bgGrey">
+				<div class="container">
+					<div class="row">
+						<div class="capcelera_basica col-sm-12">
+							<div class="capcelera_basica_cont">
+								<ol class="breadcrumb filariana hidden-xs">
+									<li>
+										<a href="/">Inici</a>
+									</li>
+									<li class="breadcrumbs2">
+									
+										<a href="/rpa">
+											
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Plataforma Corporativa de RPA
+
+
+
+
+
+
+										</a>
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									
+									</li>
+
+								</ol>
+
+								<h1 class="capcelera_flotant pull-left" data-txt=".title">
+									
+
+										
+											
+
+
+
+
+	Documentació de la Plataforma Corporativa de RPA
+
+
+										
+
+									
+								</h1>
+
+								
+
+								
+								
+
+								
+
+								
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</article>
+
+			
+
+
+		   <div class="padding-xs container">
+	    	
+	    	   <i><b>Darrera actualització:</b></i> 25-03-2022
+	        
+           </div>
+           
+			<article class="padding-xs padding-sm padding-md contingut">				
+				<div class="container">
+ 		
+					
+				
+
+	
+
+	<div class="row" id="TOC">
+		<div class="col-md-12 col-xs-12"> 
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#presentació-del-servei">Presentació del servei</a></li>
+<li><a href="#gestió-de-la-demanda">Gestió de la demanda</a></li>
+<li><a href="#prerequisits-pel-desplegament-de-processos">Prerequisits pel desplegament de processos</a>
+<ul>
+<li><a href="#operacionals">Operacionals</a></li>
+<li><a href="#projecte-uipath">Projecte UiPath</a></li>
+<li><a href="#estructura-de-codi-i-bones-pràctiques">Estructura de codi i bones pràctiques</a></li>
+<li><a href="#funcionals">Funcionals</a></li>
+</ul></li>
+<li><a href="#plantilles-de-documents">Plantilles de documents</a></li>
+</ul></li>
+</ul>
+</nav>
+    	</div>
+	</div>
+
+	
+
+
+					
+
+						
+
+<h2 id="presentació-del-servei">Presentació del servei</h2>
+
+<p>El següent document fa una presentació general sobre la plataforma:</p>
+
+<p><a href="/related/rpa/RPA_Presentacio_v1.0.pdf">Presentació</a></p>
+
+<h2 id="gestió-de-la-demanda">Gestió de la demanda</h2>
+
+<p>La incorporació de processos robotitzats dins la plataforma està definit pel següent procediment:</p>
+
+<p><img src="/related/rpa/demanda.png" alt="Gestio Demanda" /></p>
+
+<p>En cadascuna de les fases s&rsquo;identifiquen:</p>
+
+<ul>
+<li>Les actuacions més habituals que es poden dur a terme durant la fase en qüestió, així com la responsabilitat sobre l&rsquo;execució de les mateixes (actuacions que realitza l&rsquo;àmbit propietari del procés o que realitza l&rsquo;Oficina Tècnica)</li>
+<li>Els lliurables associats en cada fase, diferenciant aquells que obligatòriament requerirà l&rsquo;Oficina Tècnica (<strong>Sol·licitud d&rsquo;automatizació, Document de desplegament, Document d&rsquo;operativa del robot</strong>) d&rsquo;aquells que recomanem que siguin lliurats a l&rsquo;àmbit per part de l&rsquo;equip que desenvolupa el procés a robotitzar</li>
+</ul>
+
+<h2 id="prerequisits-pel-desplegament-de-processos">Prerequisits pel desplegament de processos</h2>
+
+<p>El desenvolupament i posterior desplegament de processos dins la Plataforma Corporativa de RPA anirà marcat pel compliment dels següents prerequisits (segons diferents àmbits):</p>
+
+<h3 id="operacionals">Operacionals</h3>
+
+<table>
+<thead>
+<tr>
+<th>Prerequisit</th>
+<th>Descripció</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Procés desatès (Unattended)</td>
+<td>El procés ha de poder funcionar normalment sense cap intervenció humana. Ha de ser capaç de realitzar la totalitat dels passos requerits de forma autònoma i sense supervisió des del moment en què aquest s’iniciï (manualment o de forma programada)</td>
+</tr>
+
+<tr>
+<td>Regles fixes</td>
+<td>El funcionament del procés (els passos que realitza) han de venir determinats per regles fixes i deterministes. Els camins i accions que pugui fer i en quins casos les haurà de fer han d’estar completament definits (no pot haver-hi decisions que impliquin processos “no deterministes”, com per exemple derivats de Machine Learning o Intel·ligència Artificial)</td>
+</tr>
+
+<tr>
+<td>Sense Visió per Computador o Reconeixement òptic de caràcters (OCR)</td>
+<td>En el funcionament del procés no hi ha d’haver cap part que depengui de reconeixement d’imatges o de caràcters (text) de manera visual, és a dir, que depengui del que visualment es vegi a la pantalla</td>
+</tr>
+
+<tr>
+<td>Aplicacions estables</td>
+<td>Les aplicacions sobre les quals funcioni el procés o de les que depengui han de ser estables. En cap cas pot funcionar sobre una aplicació en fase beta o en qualsevol altre estat preliminar</td>
+</tr>
+
+<tr>
+<td>Sense necessitat d’execució manual</td>
+<td>El procés no pot necessitar cap execució manual de cap cas perquè funcioni correctament, és a dir, no ha de fer falta l’execució o processat de cap cas ni de cap pas per un usuari per tal que la la resta (o una part) dels casos o passos del procés es puguin completar</td>
+</tr>
+
+<tr>
+<td>Autonomia i robustesa d’execucions</td>
+<td>El procés ha de ser autònom i robust entre execucions. S’ha de poder executar dues o més vegades seguides sense que generi problemes ni processi més d’un cop els mateixos ítems, encara que les cues de procés estiguin buides, li faltin Assets a Orchestrator, etc.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="projecte-uipath">Projecte UiPath</h3>
+
+<table>
+<thead>
+<tr>
+<th>Prerequisit</th>
+<th>Descripció</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Versió</td>
+<td>La versió de UiPath en què ha d’estar el projecte ha de ser la 2021.10.* o superior (que sigui estable)</td>
+</tr>
+
+<tr>
+<td>Compilació i validació correcta</td>
+<td>El projecte es pot obrir correctament amb UiPath Studio sense problemes i sense que generi cap avís. El projecte compila i es pot validar sense errors amb l’eina de validació que proporciona UiPath</td>
+</tr>
+
+<tr>
+<td>Nom</td>
+<td>El nom del projecte de UiPath ha de seguir la convenció estàndard de nomenclatura de projectes, que és RPA_AAA_BBB_CCC_NNN, essent “AAA”, “BBB” i “CCC” l’acrònim de l’Àrea, l’Aplicació i el nom de l’Automatisme, respectivament. NNN ha de ser el número de l’Automatisme d’aquesta Àrea, Aplicació i nom, començant per 001. Exemple: Per l’automatisme de Valoració de Béns Immobles (IMM), que és de ATC, opera sobre Gaudí (GAU) i és el primer que es desenvolupa per aquesta tasca, el nom seria “RPA_ATC_GAU_IMM_001”</td>
+</tr>
+
+<tr>
+<td>Biblioteques i espais de noms</td>
+<td>Les biblioteques (libraries) que faci servir el projecte són oficials i/o estan aprovades per utilitzar-se amb UiPath. A més a més, la versió que s’utilitza és estable i no obsoleta. Al projecte no hi pot haver biblioteques que no es facin servir. De manera similar, els espais de noms que faci servir el projecte en el codi han d’estar aprovats per UiPath i no poden estar inclosos al projecte si no es fan servir</td>
+</tr>
+
+<tr>
+<td>Repositori de control de versions</td>
+<td>L’equip desenvolupador del procés automatitzat haurà de desar el projecte dins el repositori corporatiu (GIT) del SIC. Per fer-ho, l’Oficina Tècnica donarà accés als usuaris pertinents dins el projecte associat al procés que es generarà dins el GIT i vinculat a la Plataforma Corporativa de RPA</td>
+</tr>
+
+<tr>
+<td>Desplegament amb Anàlisi</td>
+<td>El projecte s’ha de poder desplegar des de Studio a Orchestrator amb l’opció de “Enforce Analyzer before publish” activa, que garanteix que el projecte està validat correctament per l’eina de validació de UiPath abans de desplegar-se</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="estructura-de-codi-i-bones-pràctiques">Estructura de codi i bones pràctiques</h3>
+
+<table>
+<thead>
+<tr>
+<th>Prerequisit</th>
+<th>Descripció</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Arquitectura i ús de Performer/Dispatcher</td>
+<td>El projecte ha d’estar programat seguint l’estructura de Productor i Consumidor (Performer/Dispatcher), que han d’estar en paquets (packages) de projecte diferents. També ha d’utilitzar la plantilla Robotic Enterprise Framework en el cas del consumidor</td>
+</tr>
+
+<tr>
+<td>Modularitat</td>
+<td>Totes les funcionalitats implementades en codi que s’utilitzin en més d’un punt del mateix han d’estar encapsulades en workflows (fitxers de codi .xaml) diferents. Dins dels fitxers no pot haver codi duplicat ni codi que es repeteixi en diferents fitxers del projecte</td>
+</tr>
+
+<tr>
+<td>Bones pràctiques</td>
+<td>El projecte ha de complir amb les bones pràctiques (o millors pràctiques) que hi ha definides en el document de Sol·licitud d’Automatizació</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="funcionals">Funcionals</h3>
+
+<table>
+<thead>
+<tr>
+<th>Prerequisit</th>
+<th>Descripció</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Document d’automatització</td>
+<td>Cal lliurar el Document de Sol·licitud d’Automatització emplenat</td>
+</tr>
+
+<tr>
+<td>Guia de desplegament</td>
+<td>Cal disposar de la Guia de Desplegament amb tots els passos i requisits necessaris per posar a punt el procés en l’entorn d’Orchestrator per poder executar el desplegament del procés des de l’entorn de Preproducció, a l’entorn de Producció</td>
+</tr>
+
+<tr>
+<td>Guia Operativa</td>
+<td>Cal disposar de la guia Operativa del procés, que detalli els components del mateix, els passos a seguir per executar-lo en l’entorn d’Orchestrator i la operativa en cas d’incidències, abans d’activar el procés en l’entorn de Producció</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="plantilles-de-documents">Plantilles de documents</h2>
+
+<p>Les següents plantilles de documents han de ser complimentades i lliurades a l&rsquo;Oficina Tècnica per cadascun dels processos desplegats:</p>
+
+<ul>
+<li><a href="/related/rpa/Assumpte_DT_ARPA_V1.0.docx">Plantilla de Solicitud d&rsquo;automatizació</a>, a lliurar durant la definició de requeriments del procés automatitzat.</li>
+<li><a href="/related/rpa/Assumpte_DES_RPA_v1.0.xlsx">Plantilla de Document de desplegament</a>, a lliurar en la fase d&rsquo;implantació, dins la petició de desplegament del procés en l&rsquo;entorn de producció.</li>
+<li><a href="/related/rpa/Assumpte_OPER_RPA_v1.0.docx">Plantilla de Document d&rsquo;operativa de Robot</a>, a lliurar en la fase de control i seguiment, en el moment que el procés entra definitívament en producció.</li>
+</ul>
+
+
+					
+
+					
+				</div>	
+
+			</article>	
+
+
+	</section>	
+
+		<div class="fons_footer ">
+		<footer class="container center-block shadowBox2">
+			<div class="shadow2"></div>
+			<div class="row footer_tab_ord">
+
+				<div class="footer_tab_bot col-sm-12">
+					<div class="avis_legal">
+
+						<div id="fAvisLegal">
+							<div>
+								<div class="hidden-xs">
+									<a href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" alt="www.gencat.cat"
+										/></a>
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								<div class="visible-xs avis_legal">
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								
+								<div class="fi_peu visible-xs">
+									<a title="www.gencat.cat" href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" 
+										alt="www.gencat.cat" /></a> <a class="torna_amunt pull-right"
+										href=" javascript:tornarAmunt();" title="Torna amunt">
+										<p>Torna amunt</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="/js/master.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script src="/js/custom.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+if(location.hostname!=="localhost"){
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', "UA-59408075-1", 'auto');
+	ga('send', 'pageview', {
+	  	'page': location.pathname + location.search  + location.hash
+	  }
+	);
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html xml:lang="ca-ES" lang="ca-ES" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Windows Hello</title>
+		<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link href="/css/master.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/canigo.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+
+	<script>
+		document.write("<meta name=\"titol\" content=\"Windows Hello\" />");
+		document.write("<meta name=\"description\" content=\"L\x27autenticació és un punt crític, ja que a més de requerir seguretat també s’intenta garantir una bona experiència, degut a aquest motiu les solucions com Windows Hello han fet avançar aquesta tendència.\" />");
+	</script>
+
+	
+
+</head>
+<body class="single">
+	<div class="contenidor unfixed">
+
+				
+
+		<header class="fons_header navbar navbar-default z-index-menu">
+			<div class="container" role="menu">
+				<div class="row clearfix menuNav">
+					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
+						<button type="button" onclick="amunt();" title="Menu"
+							class="navbar-toggle pull-left" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+
+					<div class="col-md-3 col-xs-6 col-offset-2 column visible-xs titol-mobil">
+						
+						<span class="white titol-mobil-destacat">canigo.ctti</span><span class="white">.gencat.cat</span>
+					</div>
+
+					<div class="col-md-3 col-xs-3 column visible-xs coloca1">
+						<button onclick="amunt();" type="button" title="Cerca"
+							class="ico_cerca " data-toggle="collapse" data-target=".dos">
+						</button>
+					</div>
+
+				</div>
+
+				<div class="collapse dos">
+					<div class="shadowBox">
+						<form class="navbar-form navbar-left primer" action="/cercador/" method="get"
+ 						onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
+							<div class="form-group">
+								<input type="search" class="form-control" name="q" id="cerca_cap"
+									title="Cerca"
+									placeholder="Cerca" />
+								<button type="button" title="Neteja" class="btn btn-default"></button>
+								<input type="submit" class="ocult" name="Cerca" value="Cerca" />
+							</div>
+						</form>
+					</div>
+				</div>	
+
+				<nav class="collapse navbar-collapse navbar-ex1-collapse ">
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-4 column">
+							<a class="img-responsive logo" title="Generalitat de Catalunya"
+								href="https://ctti.gencat.cat/">gencat.cat</a>
+							<button class="menu_tancar visible-xs collapsed"
+								data-target=".navbar-collapse" data-toggle="collapse"
+								title="Tancar"></button>
+						</div>
+
+						<div class="col-md-6 col-sm-8 column hidden-xs hidden-mg">
+							<form class="navbar-form cercador_vermell hidden-xs pull-right" action="/cercador/"  method="get" onsubmit="location.href=this.action+'?q='+this.cerca2.value; return false;">
+								<div class="form-group">
+									<label class="hidden" for="cerca2">Cerca</label>
+									<input id="cerca2" class="form-control" type="search" 
+									placeholder="Cerca" name="q" title="Cerca">
+									<input class="btn btn-default" type="submit" title="Cerca" value="">
+								</div>
+							</form>
+
+							
+
+						</div>
+
+					</div>
+					<div class="col-xs-12 hidden-xs" id="nomPortal">
+                    	<span class="titol-cap-nou">Centre de Telecomunicacions i Tecnologies de la Informació</span>
+                    </div>					
+					<ul class="nav navbar-nav">
+
+			        	
+
+						<li>
+							<a class="dropdown-toggle" href='/' data-toggle='_dropdown'>Inici</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/arqctti' data-toggle='_dropdown'>Arquitectura CTTI</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/blog' data-toggle='_dropdown'>Blog</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cloud' data-toggle='_dropdown'>Cloud</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/canigo-fwk-docs' data-toggle='_dropdown'>Canigó</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sic' data-toggle='_dropdown'>SIC</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/sgde' data-toggle='_dropdown'>SGDE</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/gicar' data-toggle='_dropdown'>GICAR</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/cs' data-toggle='_dropdown'>Centres de Suport</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/dadesref' data-toggle='_dropdown'>Gestió Tècnica de Dades</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/eventhub' data-toggle='_dropdown'>EventHub</a>
+						</li>
+
+						
+
+						<li>
+							<a class="dropdown-toggle" href='/rpa' data-toggle='_dropdown'>RPA</a>
+						</li>
+
+						
+
+					</ul>
+
+				</nav>
+			</div>
+		</header>
+
+
+
+	</div>
+
+	<section class="border-start">
+
+						
+			
+
+			<article class="bgGrey">
+				<div class="container">
+					<div class="row">
+						<div class="capcelera_basica col-sm-12">
+							<div class="capcelera_basica_cont">
+								<ol class="breadcrumb filariana hidden-xs">
+									<li>
+										<a href="/">Inici</a>
+									</li>
+									<li class="breadcrumbs2">
+									
+										<a href="/blog">
+											
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Blog d'Arquitectura
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										</a>
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									
+									</li>
+
+								</ol>
+
+								<h1 class="capcelera_flotant pull-left" data-txt=".title">
+									
+
+										
+											
+
+
+
+
+	Windows Hello
+
+
+										
+
+									
+								</h1>
+
+								
+
+								
+								
+
+								
+
+								
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</article>
+
+			
+
+
+		   <div class="padding-xs container">
+	    	
+	    	   <i><b>Darrera actualització:</b></i> 18-05-2022
+	        
+           </div>
+           
+			<article class="padding-xs padding-sm padding-md contingut">				
+				<div class="container">
+ 		
+					
+				
+
+	
+
+
+					
+
+						
+
+<hr />
+
+<h1 id="windows-hello"><strong>Windows Hello</strong></h1>
+
+<hr />
+
+<h2 id="TaulaContiguts"><strong>Taula de Continguts</strong></h2>
+
+<ol>
+<li><a href="#Introduccio">Introducció</a></li>
+<li><a href="#WindowsHelloVSWindowsHelloFBusiness">Windows Hello versus Windows Hello For Business</a></li>
+<li><a href="#Novetats">Novetats</a></li>
+<li><a href="#Referencies">Referències</a></li>
+<li><a href="#Glossari">Glossari</a></li>
+</ol>
+
+<hr />
+
+<h2 id="Introduccio"><strong>Introducció</strong></h2>
+
+<p>Quan Windows 10 va aparèixer per primera vegada, incorporava Microsoft Passport i Windows Hello, fet que va permetre  proporcionar una autenticació multifactorial.
+Per simplificar el desplegament i millorar la compatibilitat, Microsoft ha combinat aquestes tecnologies en una única solució amb el nom de Windows Hello i <em><strong>pot aplicar-se tant per àmbit personal com empresarial</strong></em>. Amb aquesta funcionalitat s’ofereix als usuaris de Windows una manera alternativa d&rsquo;iniciar sessió als seus dispositius i aplicacions mitjançant l&rsquo;empremta digital, l&rsquo;escaneig de l&rsquo;iris o el reconeixement facial.</p>
+
+<p>Es tracta d’una solució d’autenticació biomètrica fiable i totalment integrada basada en el reconeixement facial o la concordança d&rsquo;empremtes digitals que utilitza una combinació de càmeres especials d&rsquo;infrarojos (IR) i programari per augmentar la precisió i protegir-se de la falsificació en el processos d’autenticació.
+Els principals venedors de maquinari disposen de dispositius amb càmeres integrades  i lectors d’empremtes digitals compatibles amb aquesta solució, permetent que els dispositius que no en tenen, els puguin afegir.</p>
+
+<p>El <strong>reconeixement facial</strong>, utilitza càmeres especials que veuen en llum d’infrarojos, la qual cosa, els permet distingir de manera fiable entre una fotografia o escaneig i una persona viva, és per aquest motiu que hi ha diversos venedors que estan posant a la venta càmeres externes que incorporen aquesta tecnologia. A més, els principals fabricants d&rsquo;ordinadors portàtils també l&rsquo;incorporen als seus dispositius.</p>
+
+<p>El <strong>reconeixement d’empremtes digitals</strong> utilitza un sensor d&rsquo;empremta capacitiu per escanejar-la.  Aquests  estan disponibles als ordinadors Windows des de fa anys, tot i que la  generació actual de sensors és significativament més fiable i menys propensa a errors. És per aquest motiu que la majoria de lectors d&rsquo;empremtes digitals existents funcionen amb Windows 10 i Windows 11.</p>
+
+<p>A nivell de privacitat i seguretat, Windows emmagatzema les dades biomètriques que s&rsquo;utilitzen per implementar la solució de manera segura només al dispositiu local i les dades biomètriques no es desplacen i mai s&rsquo;envien a dispositius o servidors externs. Per això no hi ha cap punt de recollida únic que un atacant pugui comprometre per robar dades biomètriques.</p>
+
+<p>És important saber que per la utilització d’aquesta funcionalitat, cal fer una verificació inicial en dos passos que ha de fer el propi usuari i que es du a terme, durant  la inscripció.</p>
+
+<p>Windows Hello es configura al dispositiu de l&rsquo;usuari, i Windows demana a l&rsquo;usuari que estableixi una dada biomètrica i un PIN (serà necessari en l’inici de sessió si la lectura biomètrica no és possible). A continuació, Windows disposa de la capacitat per a utilitzar la funcionalitat durant el procés d’autenticació.</p>
+
+<p>Per configurar la solució, cal anar a les opcions d&rsquo;inici de sessió de la configuració del compte.  S’ha d&rsquo;establir una exploració facial, una exploració de l&rsquo;iris o una empremta digital per començar, però sempre es podrà millorar aquestes exploracions i afegir o eliminar empremtes dactilars addicionals. Destacar també que la funcionalitat de Windows Hello pot conviure amb la contrasenya com una opció addicional d’inici de sessió.</p>
+
+<p>Un cop configurat, un cop d&rsquo;ull al seu dispositiu o l&rsquo;exploració d&rsquo;un dit desbloquejarà l&rsquo;accés als comptes de Microsoft.
+<br>
+<br>
+<div align="center">
+  <img src="/images/bloc/2022/05/foto1.gif" />
+</div>
+<br></p>
+
+<p>Windows Hello soluciona els problemes següents sobre les contrasenyes:</p>
+
+<ul>
+<li>Les contrasenyes fortes poden ser difícils de recordar i els usuaris sovint reutilitzen contrasenyes en diversos llocs.</li>
+<li>Les infraccions del servidor poden exposar les credencials de xarxa simètriques (contrasenyes).</li>
+<li>Les contrasenyes estan subjectes a atacs de repetició.</li>
+<li>Els usuaris poden exposar les seves contrasenyes sense voler a causa d&rsquo;atacs de pesca.</li>
+</ul>
+
+<p>Addicionalment, cal dir que Windows Hello permet als usuaris autenticar-se a través de:</p>
+
+<ul>
+<li>Un compte de Microsoft.</li>
+<li>Un compte d&rsquo;Active Directory.</li>
+<li>Un compte de Microsoft Azure Active Directory (Azure AD).</li>
+<li>Les aplicacions que utilitzin l’API.</li>
+<li>Serveis de proveïdors d&rsquo;identitat o serveis de persones de confiança que admeten l&rsquo;autenticació Fast ID Online (FIDO) v2.0.</li>
+</ul>
+
+<p><br>
+<div align="center">
+  <img src="/images/bloc/2022/05/foto2.gif" />
+</div>
+<br></p>
+
+<h2 id="WindowsHelloVSWindowsHelloFBusiness"><strong>Windows Hello versus Windows Hello For Business</strong></h2>
+
+<p>Windows Hello està orientat tant per l’entorn personal com per l’empresarial  però és important destacar que tots els models d’implementació empresarials compleixen amb directrius estrictes de processament i tractament de dades biomètriques que garanteixen la seguretat de les mateixes i la privacitat de les dades.</p>
+
+<p><strong>Punts clau de Windows Hello:</strong></p>
+
+<ul>
+<li>La funcionalitat domèstica de Windows Hello (anomenat també PIN de Conveniència) està orientat a ús personal i no pas empresarial. No disposa de suport empresarial.</li>
+<li>A Windows Hello domèstic, les persones poden crear un PIN o un gest biomètric als seus dispositius personals per iniciar la sessió còmodament. Aquest ús és exclusiu del dispositiu on està configurat, però utilitza un simple <em><strong>hash de contrasenya</strong></em> en funció del tipus de compte de la persona. Aquesta configuració s&rsquo;anomena PIN de conveniència de Windows Hello i <em><strong>no està recolzada per una autenticació asimètrica</strong></em> (clau pública/privada) o basada en certificats.</li>
+<li>No disposa de gestió avançada.</li>
+<li>No requereix registre amb multi factor d’autenticació (MFA).</li>
+</ul>
+
+<p><strong>Punts clau de Windows Hello for Business:</strong></p>
+
+<ul>
+<li>Windows Hello for Business crea un parell de claus criptogràfiques vinculades al mòdul de plataforma de confiança (TPM). L&rsquo;accés a aquestes claus i l&rsquo;obtenció d&rsquo;una signatura per validar la possessió de la clau privada de l&rsquo;usuari, només s&rsquo;habilita mitjançant el PIN o biomètrics.</li>
+<li>La verificació en dos passos que té lloc durant la inscripció a la solució, crea una relació de confiança entre el proveïdor d&rsquo;identitat i l&rsquo;usuari quan la part pública del parell de claus pública/privada s&rsquo;envia a un proveïdor d&rsquo;identitat i s&rsquo;associa amb un compte d&rsquo;usuari.</li>
+<li>Windows Hello for Business permet la configuració mitjançant una política de grup o una política de gestió de dispositius mòbils (MDM).</li>
+<li>Sempre utilitza l&rsquo;autenticació basada en clau o certificat i això fa que sigui molt més segur que el PIN de conveniència de Windows Hello.</li>
+<li>La clau privada mai surt d&rsquo;un dispositiu quan s&rsquo;utilitza TPM. El servidor d&rsquo;autenticació té una clau pública que s&rsquo;assigna al compte d&rsquo;usuari durant el procés de registre.</li>
+<li>Els comptes personals (compte de Microsoft) i corporatius (Active Directory o Azure AD) utilitzen un únic contenidor per a les claus. Totes les claus estan separades pels dominis dels proveïdors d&rsquo;identitat per ajudar a garantir la privadesa dels usuaris.</li>
+<li>És compatible amb un entorn passwordless.</li>
+<li>És compatible amb FIDO 2.0 i 2FA interactiu.</li>
+<li>Disposa de suport empresarial amb el fabricant.
+<br><br></li>
+</ul>
+
+<h2 id="Novetats"><strong>Novetats</strong></h2>
+
+<p>Microsoft ha anat incorporant al llarg de les seves actualitzacions de sistema operatiu, millores i evolucions que afecten a la funcionalitat de Windows Hello i de les quals es poden destacar les següents:</p>
+
+<p><strong>Suport Multi-càmera per a Windows Hello</strong></p>
+
+<p>Permet als usuaris triar la prioritat de càmera externa quan hi ha càmeres internes i externes compatibles amb Windows Hello.</p>
+
+<p><strong>Mètode d’implementació de Windows Hello for Business Cloud trust</strong></p>
+
+<p>Aquest nou mètode utilitza Azure Active Directory (AD) Kerberos per abordar els problemes del model de desplegament empresarial de confiança clau.</p>
+
+<p>L’objectiu és oferir una experiència de desplegament simplificada d’inici de sessió únic local amb claus de seguretat i amb una configuració addicional mínima. És el model recomanable per Microsoft si es compleixen els seus requeriments mínims i si no es necessari suportar escenaris d’autenticació de certificats.</p>
+
+<p>A diferencia dels altres models d’implementació empresarial, aquest model ofereix una experiència de desplegament més senzilla perquè no requereix el desplegament d&rsquo;infraestructura de clau pública (PKI), ni canvis a la PKI existent, i tampoc requereix la sincronització de claus publiques entre Azure AD i els controladors de domini locals per a que els usuaris puguin accedir als recursos i aplicacions locals.</p>
+
+<p>En definitiva, es pot utilitzar per a nous desplegaments de Windows Hello empresarial o desplegaments existents que es poden moure a aquest mètode mitjançant controls de polítiques.</p>
+
+<p><br>
+<div align="center">
+  <img src="/images/bloc/2022/05/foto4.jpg" />
+</div>
+<br></p>
+
+<p><strong>Windows Hello amb Identitat ràpida online 2.0 (FIDO 2.0)</strong></p>
+
+<p>L&rsquo;adopció de l&rsquo;especificació FIDO significa que els socis de Microsoft poden proporcionar claus de seguretat per a una capa addicional de protecció quan inicien sessió mitjançant Windows Hello.</p>
+
+<p>Microsoft dona suport a la darrera versió del protocol de seguretat, FIDO2. Això permet als usuaris accedir a dispositius basats en estàndards, com ara <em><strong>claus de seguretat USB</strong></em>, que ofereixen una capa addicional de protecció quan inicien sessió als comptes de Microsoft.</p>
+
+<p>Amb la versió 2004 de Microsoft Windows 10, Microsoft va estendre la capacitat sense contrasenya per Windows Hello i Windows Hello for Business als navegadors web, això també significa, que les aplicacions natives de Windows que estan protegides amb Azure AD i que obren una vista web amb Edge per  l&rsquo;autenticació, <em><strong>també són compatibles</strong></em>. Es permet doncs, l’ús de la capacitat de Windows Hello FIDO2 al Sistema Operatiu, navegadors web, Microsoft WVD, Teams i aplicacions natives de Windows per iniciar sessió sense contrasenya amb l&rsquo;empremta digital o reconeixement facial.</p>
+
+<p>Anteriorment, Windows Hello era un autenticador de plataforma que només es podia utilitzar dins del propi sistema operatiu de Windows. Amb aquesta nova capacitat, el lector d&rsquo;empremtes digitals integrat de l’ordinador portàtil, la càmera web d&rsquo;infrarojos integrada o la càmera web USB externa es poden utilitzar amb el navegador web, d’igual forma que els autenticadors externs.</p>
+
+<p>Bàsicament, qualsevol perifèric compatible es pot utilitzar amb navegadors web de la mateixa manera que es fa amb  les claus de seguretat FIDO2 d’avui. Actualment, Windows Hello és compatible com a autenticador Fast Identity Online 2 (FIDO2) a tots els navegadors principals, inclosos Chrome i Firefox.</p>
+
+<p>Windows Hello for Business es compatible amb el directori actiu híbrid d’Azure i l&rsquo;inici de sessió amb el número de telèfon (MSA). D’aquesta forma el suport de claus de seguretat FIDO2 s&rsquo;amplia als entorns híbrids d’Azure que permet a les empreses amb entorns híbrids, aprofitar l&rsquo;autenticació sense contrasenya amb aquesta capa addicional de seguretat.</p>
+
+<p><br>
+<div align="center">
+  <img src="/images/bloc/2022/05/foto3.png" />
+</div>
+<br></p>
+
+<h2 id="Referencies"><strong>Referències</strong></h2>
+
+<p><a href="https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-trust">https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-trust</a> <br>
+<a href="https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-overview">https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-overview</a> <br>
+<a href="https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/">https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/</a> <br>
+<a href="https://www.obscorp.com/blog/using-windows-hello-to-add-security">https://www.obscorp.com/blog/using-windows-hello-to-add-security</a> <br>
+<a href="https://katystech.blog/mem/intune-windows-hello-for-business">https://katystech.blog/mem/intune-windows-hello-for-business</a> <br>
+<a href="https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/17/windows-hello-fido2-security-keys/">https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/17/windows-hello-fido2-security-keys/</a> <br>
+<a href="https://www.intercede.com/us/how-it-leaders-can-best-use-windows-hello-for-business-for-strong-workforce-authentication/">https://www.intercede.com/us/how-it-leaders-can-best-use-windows-hello-for-business-for-strong-workforce-authentication/</a> <br>
+<a href="https://www.jasonsamuel.com/2020/10/13/using-windows-hello-fido2-capability-with-web-browsers-microsoft-wvd-teams-and-native-windows-apps-for-passwordless-logins-using-your-fingerprint-or-face/">https://www.jasonsamuel.com/2020/10/13/using-windows-hello-fido2-capability-with-web-browsers-microsoft-wvd-teams-and-native-windows-apps-for-passwordless-logins-using-your-fingerprint-or-face/</a> <br>
+<a href="https://fidoalliance.org/microsoft-achieves-fido2-certification-for-windows-hello/">https://fidoalliance.org/microsoft-achieves-fido2-certification-for-windows-hello/</a> <br>
+<a href="https://www.computerworld.com/article/3244347/what-is-windows-hello-microsofts-biometrics-security-system-explained.html">https://www.computerworld.com/article/3244347/what-is-windows-hello-microsofts-biometrics-security-system-explained.html</a> <br></p>
+
+<h2 id="Glossari"><strong>Glossari</strong></h2>
+
+<ul>
+<li><strong>FIDO (Fast Identity Online):</strong> És el nou estàndard que reforça la seguretat dels sistemes d&rsquo;autenticació de la identitat en línia en dispositius mòbils i aplicacions web.</li>
+<li><strong>WVD (Windows Virtual Desktop):</strong> És un servei de virtualització d&rsquo;escriptoris i aplicacions que s&rsquo;executa dins de Microsoft Azure.</li>
+<li><strong>MSA (Microsoft Account):</strong> És la compte de Microsoft que permet als usuaris iniciar sessió mitjançant un únic conjunt de credencials.</li>
+<li><strong>Passwordless:</strong> Fa referència a la capacitat que té Windows Hello a tendir a un entorn on la paraula de pas és utilitzada menys vegades i fins i tot, pot arribar a deixar d’utilitzar-se en determinats casos d’ús.</li>
+</ul>
+
+<p><br>
+<br></p>
+
+<h6 id="unitat-arquitectura-d-entorn-digital-de-treball-br"><strong>Unitat Arquitectura d’Entorn Digital de Treball</strong> <br></h6>
+
+<h6 id="direcció-arquitectura-i-components-transversals"><strong>Direcció Arquitectura i Components Transversals</strong></h6>
+
+
+					
+
+					
+						<a name="comments"></a>
+						<hr />		
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arquitectura-ctti" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					
+				</div>	
+
+			</article>	
+
+
+	</section>	
+
+		<div class="fons_footer ">
+		<footer class="container center-block shadowBox2">
+			<div class="shadow2"></div>
+			<div class="row footer_tab_ord">
+
+				<div class="footer_tab_bot col-sm-12">
+					<div class="avis_legal">
+
+						<div id="fAvisLegal">
+							<div>
+								<div class="hidden-xs">
+									<a href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" alt="www.gencat.cat"
+										/></a>
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								<div class="visible-xs avis_legal">
+									<p>
+										<a title="Avis legal" href="https://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Avís legal</a>: La &copy; Generalitat de Catalunya permet la reutilització dels continguts i de les dades sempre que se citi la font i la data d'actualització, que no es desnaturalitzi la informació i que no es contradigui amb una llicència específica.
+									</p>
+								</div>
+								
+								<div class="fi_peu visible-xs">
+									<a title="www.gencat.cat" href="https://www.gencat.cat"> <img
+										src="/img/logo_generalitat_gris.png_679097835.png"
+										width="101" height="27" 
+										alt="www.gencat.cat" /></a> <a class="torna_amunt pull-right"
+										href=" javascript:tornarAmunt();" title="Torna amunt">
+										<p>Torna amunt</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="/js/master.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script src="/js/custom.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+if(location.hostname!=="localhost"){
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', "UA-59408075-1", 'auto');
+	ga('send', 'pageview', {
+	  	'page': location.pathname + location.search  + location.hash
+	  }
+	);
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>
